@@ -1,3 +1,30 @@
 # UFS Coursework
 
-This repository contains my programming coursework completed as part of my BSc Information Technology degree at the University of the Free State.
+This repository contains my programming coursework, practicals, assignments, and exercises completed during my Bachelor of Science in Information Technology (BSc IT) studies at the University of the Free State (UFS).
+
+## Repository Structure
+```
+First Year/
+├── CSIS1614
+├── CSIS1624
+├── CSIS1664
+
+Second Year/
+└── (Coming Soon)
+
+Third Year/
+└── (Coming Soon)
+```
+## Languages
+
+- C#
+
+## Technologies
+
+- .NET Framework
+- Visual Studio
+- Git
+- GitHub
+## Purpose
+
+This repository documents my academic programming journey and serves as a record of my progress throughout my degree.
