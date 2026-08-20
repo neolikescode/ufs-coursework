@@ -23,9 +23,10 @@ namespace Menu_Driven_file_mnger____File_Management
                 switch(iChoice)
                 {
                     case 1:
-
+                        CreateFile();
                         break;
                     case 2:
+                        WriteToFile();
                         break;
                     case 3:
                         break;
@@ -68,15 +69,26 @@ namespace Menu_Driven_file_mnger____File_Management
         }
         private static void WriteToFile()
         {
-            Console.Write("Enter the file path and a line of text: ");
             try
             {
+                Console.Write("Enter the file path and a line of text: ");
                 string fileWritten = Console.ReadLine();
-                using (StreamWriter w = new StreamWriter (fileWritten, true))
+
+                if(File.Exists(fileWritten))
+                {
+                    using (StreamWriter w = new StreamWriter(fileWritten, true))
+                    {
+                        w.Write(fileWritten);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("File Does Not Exist!");
+                }
             }
             catch(Exception ex)
             {
-                Console.WriteLine($"An error has occurred, please try again: {ex.Message}")
+                Console.WriteLine($"An error has occurred, please try again: {ex.Message}");
             }
         }
         private static void ReadFile()
@@ -87,7 +99,10 @@ namespace Menu_Driven_file_mnger____File_Management
                 string fileRead = Console.ReadLine();
                 if(File.Exists(fileRead))
                 {
-                    
+                    using(StreamReader r = new StreamReader (fileRead, true))
+                    {
+                        
+                    }
                 }
                 else
                 {
@@ -96,7 +111,7 @@ namespace Menu_Driven_file_mnger____File_Management
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error has occurred, please try again: {ex.Message}")
+                Console.WriteLine($"An error has occurred, please try again: {ex.Message}");
             }
         }
     }
