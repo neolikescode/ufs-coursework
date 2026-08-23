@@ -1,0 +1,173 @@
+/* CSIS1664 (2026) - Class Activity 9 */
+/* Orbit Observatory - Cascading, Inheritance, and CSS3 Colours */
+/* Filename: orbit.css */
+
+/* This style sheet already contains your work from Class Activity 8.
+   Add the rules for Class Activity 9 in the places indicated below. */
+
+
+/* ============================================================
+   GIVEN RULES FOR QUESTIONS 1 AND 2 - DO NOT DELETE ANY OF THEM
+   ============================================================ */
+
+nav a {
+    color: hsl(38, 92%, 60%);
+}
+
+header ul li a {
+    color: hsl(0, 72%, 55%);
+}
+
+nav li a {
+    color: hsl(210, 20%, 90%);
+}
+
+/* 1.   Specificity of the three given rules
+   a.   Work out the specificity of each of the three given
+        selectors, and write it as a comment next to the rule, using
+        the format 0-0-0.
+   b.   State which of the three colours the navigation links will
+        actually display, and explain why. Work this out before you
+        open the page, and then check your answer in the browser.
+*/
+
+/* Answer to Question 1b:
+ a. 0-0-2
+    0-0-4
+    0-0-3
+ b. number 2, it has a great specificity value compared to the other selectors
+*/
+
+
+
+/* 2.   Correcting the cascade
+   a.   The client insists that the navigation links must display in
+        the amber colour hsl(38, 92%, 60%). Without deleting any of
+        the three given rules, and without changing any of their
+        declarations, change ONE selector so that the amber rule
+        wins.
+   b.   Explain your change in a comment, and give the new
+        specificity of the selector you changed.
+*/
+
+/* Answer to Question 2b: 
+    #site-header nav a {
+    color: hsl(38, 92%, 60%);
+}
+    added the ID site-header to the selector with the amber color, which changes the specifity to 1-0-2
+*/
+
+/* -------- General CSS rules --------  */
+
+/* 3.   Entire web page (add to end of existing rule)
+   a.   Set the background colour to hsl(222, 39%, 11%).
+   b.   Set the text colour to hsl(210, 20%, 90%).
+*/
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: hsl(222, 39%, 11%);
+    color: hsl(210, 20%, 90%);
+}
+
+/* 4.   Inheritance
+   a.   The body rule sets a text colour and a background colour,
+        and nothing else. Explain in a comment why the paragraphs
+        inside the about section display in the new text colour,
+        even though no colour has been set on them. Then explain why
+        the about section appears to have a dark background, even
+        though no background colour has been set on it.
+*/
+
+/* Answer to Question 4:
+     If a property is applied to an element, its child elements are
+     also affected
+*/
+
+
+/* 5.   All level-1 headings (add to end of existing rule)
+   a.   Set the text colour to hsl(38, 92%, 60%).
+   b.   Add a text shadow that is offset 2px horizontally and 2px
+        vertically, with a blur radius of 8px, in the colour rgba(0,
+        0, 0, 0.8).
+*/
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    color: hsl(38, 92%, 60%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* -------- Hyperlink rules --------  */
+
+/* 6.   Add the necessary CSS rules to format the hyperlinks on this
+        page. Write these as three separate rules, and take care to
+        place them in the correct order.
+   a.   Unvisited links and visited links must display in the amber
+        colour hsl(38, 92%, 60%).
+   b.   A link that the visitor hovers over must display in hsl(38,
+        92%, 75%) and must be underlined.
+*/
+a:link {
+    color: hsl(38, 92%, 60%);
+}
+a:visited {
+    color: hsl(38, 92%, 60%);
+}
+a:hover {
+    color: hsl(38, 92%, 75%);
+    text-decoration: underline;
+}
+/* -------- Style class rules --------  */
+
+p.tagline {
+    font-style: italic;
+    font-size: 1.25em;
+    word-spacing: 3px;
+}
+
+/* 7.   All paragraphs with the style class date (add to end of
+        existing rule)
+   a.   Set the text colour to rgba(255, 255, 255, 0.65).
+*/
+
+p.date {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* 8.   All article elements that use the card class
+   a.   Set the background colour to rgba(255, 255, 255, 0.06).
+*/
+.class article {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+
+/* -------- Section and division rules --------  */
+
+header#site-header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section#about p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+
+
+
