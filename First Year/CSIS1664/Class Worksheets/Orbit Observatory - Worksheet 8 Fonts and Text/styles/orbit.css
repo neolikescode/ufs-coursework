@@ -1,0 +1,83 @@
+/* CSIS1664 (2026) - Class Activity 8 */
+/* Orbit Observatory - Fonts and Text */
+/* Filename: orbit.css */
+
+/* Add the necessary CSS rules to this external style sheet in
+   order to set the following presentation aspects of the
+   Orbit Observatory web page.
+   Work through the questions in order, and save and refresh
+   your browser after each one. */
+
+
+/* -------- General CSS rules --------  */
+
+/* 1.   Entire web page
+   a.   Use a Verdana typeface. If Verdana is not available, the
+        browser must try Geneva, and then any available sans-serif
+        typeface.
+   b.   Set the font size to 1em.
+   c.   Set the line height to 1.6.
+*/
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+}
+/* 2.   All level-1 headings
+   a.   Display the text in small caps.
+   b.   Letters must be 4px further apart than normal.
+*/
+h1{
+    font-variant: small-caps;
+    letter-spacing: 4px;
+}
+/* 3.   All level-2 headings
+   a.   Display the text in uppercase.
+   b.   Letters must be 2px further apart than normal.
+*/
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* -------- Style class rules --------  */
+
+/* 4.   The paragraph with the style class tagline
+   a.   Display the text in italics.
+   b.   Set the font size to 1.25em.
+   c.   Increase the distance between each word by 3px.
+*/
+p.tagline{
+    font-style:italic;
+    font-size: 1.25em;
+    word-spacing: 3px;
+}
+/* 5.   All paragraphs with the style class date
+   a.   Display the text in small caps.
+   b.   Letters must be 1px further apart than normal.
+*/
+p.date{
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+/* -------- Section and division rules --------  */
+
+/* 6.   All hyperlinks in the nav section of the header with the ID
+        site-header
+   a.   The text must not be underlined.
+   b.   Display the text in uppercase.
+   c.   Display the text in bold.
+*/
+#site-header nav a{
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+/* 7.   All paragraphs inside the section element with the ID about
+   a.   All text must be justified.
+   b.   Indent the first line of each paragraph by 20px.
+*/
+#about section p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
