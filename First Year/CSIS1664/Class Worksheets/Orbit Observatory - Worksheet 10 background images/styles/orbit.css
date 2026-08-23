@@ -1,0 +1,168 @@
+/* CSIS1664 (2026) - Class Activity 10 */
+/* Orbit Observatory - The Box Model */
+/* Filename: orbit.css */
+
+/* This style sheet already contains your work from Class Activities 8
+   and 9. Add the rules for Class Activity 10 in the places indicated
+   below. Save and refresh your browser after every question. */
+
+
+/* -------- Diagnostic rule (Questions 1 and 9) --------  */
+
+/* 1.   Making the boxes visible
+   a.   Give every header, main, section, article, aside, and footer
+        element a 1px dashed border in the colour rgba(255, 255,
+        255, 0.3), so that you can see where each box begins and
+        ends. Write this as one rule with a grouped selector. You
+        will remove it again in Question 9.
+*/
+header, main, section, article, aside, footer {
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+/* -------- General CSS rules --------  */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: hsl(222, 39%, 11%);
+    color: hsl(210, 20%, 90%);
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    color: hsl(38, 92%, 60%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul li a {
+    color: hsl(0, 72%, 55%);
+}
+
+nav li a {
+    color: hsl(210, 20%, 90%);
+}
+
+a:link {
+    color: hsl(38, 92%, 60%);
+}
+
+a:visited {
+    color: hsl(38, 92%, 60%);
+}
+
+a:hover {
+    color: hsl(38, 92%, 75%);
+    text-decoration: underline;
+}
+
+
+/* -------- Style class rules --------  */
+
+p.tagline {
+    font-style: italic;
+    font-size: 1.25em;
+    word-spacing: 3px;
+}
+
+p.date {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* 2.   All article elements that use the card class
+   a.   Set the padding to 20px on all four sides.
+   b.   Add a 1px solid border in the colour rgba(255, 255, 255,
+        0.12).
+   c.   Round all four corners by 8px.
+   d.   Set the bottom margin to 16px.
+        Add these declarations to the article.card rule below.
+*/
+
+article.card {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    margin-bottom:16px;
+}
+
+/* 3.   An image that uses the telescope class
+   a.   Set both the width and the height to 140px.
+   b.   Round the corners by 50%, so that the image becomes a
+        circle.
+*/
+img.telescope{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+/* -------- Section and division rules --------  */
+
+/* 4.   The main element
+   a.   Set the maximum width to 1000px.
+   b.   Centre the element horizontally, by setting the left margin
+        and the right margin to auto.
+*/
+ 
+
+/* 5.   All section elements and all aside elements
+   a.   Set the padding to 32px at the top and the bottom, and 24px
+        at the left and the right. Use the shorthand property.
+   b.   Set the bottom margin to 24px.
+*/
+
+
+/* 6.   An aside element with the ID next-session
+   a.   Remove the border that Question 1 gave to this panel.
+   b.   Add a 4px solid border on the left side only, in the amber
+        colour hsl(38, 92%, 60%).
+   c.   Round the top-right corner and the bottom-right corner by
+        8px, using two separate declarations.
+*/
+
+
+#site-header nav a {
+    color: hsl(38, 92%, 60%);
+}
+
+header#site-header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* 7.   All unordered lists in a nav section that is nested inside
+        the header with the ID site-header
+   a.   Remove the margin and the padding that the browser applies
+        to the unordered list by default.
+*/
+
+
+/* 8.   All unordered list items in a nav section that is nested
+        inside the header with the ID site-header
+   a.   Set the bottom padding of every list item to 8px.
+*/
+
+
+section#about p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+/* 9.   Removing the diagnostic rule
+   a.   Remove the rule you wrote in Question 1, either by deleting
+        it or by commenting it out.
+   b.   Look carefully at the page. Which boxes can you still see,
+        and why?
+*/
