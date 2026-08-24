@@ -16,9 +16,9 @@
         ends. Write this as one rule with a grouped selector. You
         will remove it again in Question 9.
 */
-header, main, section, article, aside, footer {
+/*header, main, section, article, aside, footer {
     border: 1px dashed rgba(255, 255, 255, 0.3);
-}
+}*/
 
 /* -------- General CSS rules --------  */
 
@@ -113,14 +113,19 @@ img.telescope{
    b.   Centre the element horizontally, by setting the left margin
         and the right margin to auto.
 */
- 
+ main{
+     max-width: 1000px;
+     margin: 0 auto;
+ }
 
 /* 5.   All section elements and all aside elements
    a.   Set the padding to 32px at the top and the bottom, and 24px
         at the left and the right. Use the shorthand property.
    b.   Set the bottom margin to 24px.
 */
-
+section, aside{
+    padding: 32px 24px 24px;
+}
 
 /* 6.   An aside element with the ID next-session
    a.   Remove the border that Question 1 gave to this panel.
@@ -129,7 +134,11 @@ img.telescope{
    c.   Round the top-right corner and the bottom-right corner by
         8px, using two separate declarations.
 */
-
+    aside#next-session {
+        border-left: 4px solid hsl(38, 92%, 60%);
+        border-top-right-radius:8px;
+        border-bottom-right-radius:8px;
+    }
 
 #site-header nav a {
     color: hsl(38, 92%, 60%);
@@ -146,13 +155,18 @@ header#site-header nav a {
    a.   Remove the margin and the padding that the browser applies
         to the unordered list by default.
 */
-
+#site-header nav ul{
+    margin: 0;
+    padding: 0;
+}
 
 /* 8.   All unordered list items in a nav section that is nested
         inside the header with the ID site-header
    a.   Set the bottom padding of every list item to 8px.
 */
-
+#site-header nav ul{
+    padding-bottom:8px;
+}
 
 section#about p {
     text-align: justify;
