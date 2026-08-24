@@ -1,0 +1,207 @@
+/* CSIS1664 (2026) - Class Activity 11 */
+/* Orbit Observatory - Background Colours and Images */
+/* Filename: orbit.css */
+
+/* This style sheet already contains your work from Class Activities 8,
+   9, and 10. Three new image files have been added to the images
+   folder: stars-tile.png, hero-nightsky.jpg, and dome-panorama.jpg.
+   Add the rules for Class Activity 11 in the places indicated below.
+   Each question states whether you must add to a rule that is already
+   there, or write a completely new rule.
+   Remember that the path in a url() value is written relative to this
+   style sheet, and not relative to the HTML document. */
+
+
+/* -------- General CSS rules --------  */
+
+/* 1.   Entire web page (add to end of existing rule)
+   a.   Add the image stars-tile.png as a background image.
+   b.   The image must repeat in both directions.
+*/
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: hsl(222, 39%, 11%);
+    color: hsl(210, 20%, 90%);
+    background-image: url("../images/stars-tile.png");
+    background-repeat: repeat;
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    color: hsl(38, 92%, 60%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+a:link {
+    color: hsl(38, 92%, 60%);
+}
+
+a:visited {
+    color: hsl(38, 92%, 60%);
+}
+
+a:hover {
+    color: hsl(38, 92%, 75%);
+    text-decoration: underline;
+}
+
+
+/* -------- Style class rules --------  */
+
+p.tagline {
+    font-style: italic;
+    font-size: 1.25em;
+    word-spacing: 3px;
+}
+
+p.date {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+article.card {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+img.telescope {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+
+/* -------- Section and division rules --------  */
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section,
+aside {
+    padding: 32px 24px;
+    margin-bottom: 24px;
+}
+
+/* 2.   The header element with the ID site-header (create a new
+        rule)
+   a.   Set the background colour to rgba(0, 0, 0, 0.55).
+*/
+#site-header {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+header#site-header nav a {
+    color: hsl(38, 92%, 60%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header#site-header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header#site-header nav ul li {
+    padding-bottom: 8px;
+}
+
+/* 3.   The section element with the ID hero (create a new rule)
+   a.   Add the image hero-nightsky.jpg as a background image.
+   b.   The image must not repeat.
+   c.   Position the image in the centre of the section, both
+        horizontally and vertically.
+   d.   Scale the image so that it covers the whole section.
+   e.   Set the minimum height of the section to 380px.
+*/
+#hero{
+    background-image: url("../images/hero-nightsky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:380px;
+}
+
+/* 4.   Cover and contain (no rule required)
+   a.   Explain in a comment what would happen to the hero image if
+        the value you used in Question 3d were replaced by contain.
+        Write your answer first, then test it in the browser, and
+        then set the value back to what it was.
+*/
+
+/* Answer to Question 4: 
+    The hero image would not cover the whole section, it would cover the section it fits in
+    the leftover space would show the background color since the aspect ratio is kept
+*/
+
+
+section#about p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* 5.   The aside element with the ID next-session (add to end of
+        existing rule)
+   a.   Set the background colour to rgba(255, 255, 255, 0.06), so
+        that the panel becomes a visible surface on the page.
+   b.   Look carefully at the two rounded corners on the right-hand
+        side of the panel. Why could you not see them before now?
+*/
+aside#next-session {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+/* Answer to Question 5b: 
+    They were not visible because the background of the element was the same as
+    the background for the whole body of the website
+*/
+
+aside#next-session {
+    border: none;
+    border-left: 4px solid hsl(38, 92%, 60%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* 6.   The section element with the ID visit (create a new rule)
+   a.   Add the image dome-panorama.jpg as a background image.
+   b.   The image must not repeat.
+   c.   Position the image in the centre of the section, both
+        horizontally and vertically.
+   d.   Scale the image so that it covers the whole section.
+   e.   The image must not scroll with the rest of the page.
+*/
+#visit{
+    background-image: url("../images/dome-panorama.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+/* 7.   The footer element with the ID site-footer (create a new
+        rule)
+   a.   Set the background colour to rgba(0, 0, 0, 0.55).
+   b.   Set the padding to 24px on all four sides.
+*/
+
+#site-footer {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding:24px;
+}
