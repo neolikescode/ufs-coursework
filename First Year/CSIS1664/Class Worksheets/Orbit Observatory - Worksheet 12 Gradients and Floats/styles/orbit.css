@@ -1,0 +1,197 @@
+/* CSIS1664 (2026) - Class Activity 12 */
+/* Orbit Observatory - Floating and Gradients */
+/* Filename: orbit.css */
+
+/* This style sheet already contains your work from Class Activities 8
+   to 11. Add the rules for Class Activity 12 in the places indicated
+   below. Save and refresh your browser after every question.
+   Answer the questions in order.
+   Note: The questions do not appear in numerical order in this file.
+   Each question sits directly above the rule it belongs to. Work in
+   numerical order. */
+
+
+/* -------- General CSS rules --------  */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: hsl(222, 39%, 11%);
+    background-image: url("../images/stars-tile.png");
+    background-repeat: repeat;
+    color: hsl(210, 20%, 90%);
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    color: hsl(38, 92%, 60%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+a:link {
+    color: hsl(38, 92%, 60%);
+}
+
+a:visited {
+    color: hsl(38, 92%, 60%);
+}
+
+a:hover {
+    color: hsl(38, 92%, 75%);
+    text-decoration: underline;
+}
+
+
+/* -------- Style class rules --------  */
+
+p.tagline {
+    font-style: italic;
+    font-size: 1.25em;
+    word-spacing: 3px;
+}
+
+p.date {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+article.card {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* 7.   All article elements that use the card class, when the visitor
+        hovers over them (create a new rule)
+   a.   Apply a linear gradient as a background image, running to the
+        bottom, from rgba(255, 255, 255, 0.10) to rgba(255, 255, 255,
+        0.03).
+*/
+article.card:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.03));
+}
+
+/* 1.   An image that uses the telescope class (add to end of existing
+        rule)
+   a.   Float the image to the left, so that the text of the next
+        session panel wraps around it.
+   b.   Set the right margin to 20px and the bottom margin to 12px, so
+        that the text does not touch the image.
+*/
+
+img.telescope {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    float: left;
+    margin-right:20px;
+    margin-bottom:12px;
+}
+
+
+/* -------- Section and division rules --------  */
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section, aside {
+    padding: 32px 24px;
+    margin-bottom: 24px;
+}
+
+/* 4.   The header element with the ID site-header (change the existing
+        rule)
+   a.   Replace the background colour with a linear gradient that runs
+        to the bottom, from rgba(0, 0, 0, 0.85) to rgba(0, 0, 0, 0.35).
+*/
+
+header#site-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.35));
+}
+
+header#site-header nav a {
+    color: hsl(38, 92%, 60%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header#site-header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header#site-header nav ul li {
+    padding-bottom: 8px;
+}
+
+/* 5.   The section element with the ID hero (change the existing rule)
+   a.   Add a second background layer in front of the photograph. This
+        should be a linear gradient that runs to the bottom, from
+        rgba(15, 23, 41, 0) at 40% to #111827 at 100%, so that the
+        photograph fades into the page background.
+   b.   Write the gradient and the url() value in the same
+        background-image declaration, separated by a comma. The layer
+        listed first is drawn in front.
+*/
+
+section#hero {
+    background-image: linear-gradient(to bottom, rgba(15, 23, 41, 0) 40%,#111827 100%), url("../images/hero-nightsky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 380px;
+}
+
+section#about p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+aside#next-session {
+    border: none;
+    border-left: 4px solid hsl(38, 92%, 60%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* 2.   The section element with the ID visit (add to end of existing
+        rule)
+   a.   Cancel the effect of the float on both sides, so that this
+        section is guaranteed to begin below the floated image.
+*/
+
+section#visit {
+    background-image: url("../images/dome-panorama.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    clear:both;
+}
+
+/* 6.   The footer element with the ID site-footer (change the existing
+        rule)
+   a.   Replace the background colour with a linear gradient at an
+        angle of 135deg, from #161E32 to #0B0F1D.
+*/
+
+footer#site-footer {
+    background-image: linear-gradient(135deg,#161E32, #0B0F1D);
+    padding: 24px;
+}
