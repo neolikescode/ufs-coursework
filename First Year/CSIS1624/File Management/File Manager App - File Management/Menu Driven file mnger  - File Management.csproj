@@ -8,9 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Menu_Driven_file_mnger____File_Management</RootNamespace>
     <AssemblyName>Menu Driven file mnger  - File Management</AssemblyName>
-	  
-	  <LangVersion>8.0</LangVersion>
-	  
+    <LangVersion>8.0</LangVersion>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,7 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="..\..\..\..\..\..\Users\USER\OneDrive\Documents\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
