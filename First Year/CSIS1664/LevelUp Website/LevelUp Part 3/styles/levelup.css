@@ -1,4 +1,4 @@
-/* ============================================================
+ /* ============================================================
    LevelUp website
    CSIS1664 (Tutorial 4): External style sheet
    Author: NN. Kgatla (2029139488)
@@ -6,130 +6,149 @@
    ============================================================ */
 
 
-/* ============================================================
+ /* ============================================================
    1. General CSS rules
    ============================================================ */
-body {
-    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    font-size: 1rem;
-    color: #333333;
-}
-h1 {
-    font-family: Georgia, "Times New Roman", sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    color: #146574;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-}
-h2 {
-    font-family: Georgia, "Times New Roman", sans-serif;
-    font-size: 1.5rem;
-    color: #146574;
-}
-p{
-    line-height:1.6;
-}
-/* ============================================================
+ body {
+     font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+     font-size: 1rem;
+     color: #333333;
+ }
+
+ h1 {
+     font-family: Georgia, "Times New Roman", sans-serif;
+     font-size: 2.5rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 0.1rem;
+     text-align: center;
+     color: #146574;
+     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+ }
+
+ h2 {
+     font-family: Georgia, "Times New Roman", sans-serif;
+     font-size: 1.5rem;
+     color: #146574;
+ }
+
+ p {
+     line-height: 1.6;
+ }
+
+ /* ============================================================
    2. Style classes
    ============================================================ */
-.quote {
-    font-size: 1.125rem;
-    color: hsl(0, 0%, 35%);
-    margin-left: 2rem;
-    padding-left: 1rem;
-    border-left: 4px solid #e6b33b;
-}
-.current {
-    color: #e6b33b;
-    font-weight: bold;
-}
-.tips{
-    margin-top: 1rem;
-    padding-left: 1.5rem;
-}
-.tips li{
-    line-height:1.8;
-}
-.tips li:first-child{
-        font-weight: bold;
-}  
-/* ============================================================
+ .quote {
+     font-size: 1.125rem;
+     color: hsl(0, 0%, 35%);
+     margin-left: 2rem;
+     padding-left: 1rem;
+     border-left: 4px solid #e6b33b;
+ }
+
+ .current {
+     color: #e6b33b;
+     font-weight: bold;
+ }
+
+ .tips {
+     margin-top: 1rem;
+     padding-left: 1.5rem;
+ }
+
+ .tips li {
+     line-height: 1.8;
+ }
+
+ .tips li:first-child {
+     font-weight: bold;
+ }
+
+ /* ============================================================
    3. Sections and divisions
    ============================================================ */
-div#wrapper {
-    width: 60rem;
-    margin: 0 auto;
-    background-color: #ffffff;
-}
-header{
-    text-align:center;
-    padding-top: 1rem;
-}
-nav {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    padding: 0.75rem;
-    background-color: #146574;
-}
-nav a {
-       color: #ffffff;
-       text-decoration: underline;
-}
-nav a:hover {
-            color: #e6b33b;
-}
-main{
-    padding: 1.5rem;
-}
-main a:link {
-        color: #146574;
-}
+ div#wrapper {
+     width: 60rem;
+     margin: 0 auto;
+     background-color: #ffffff;
+ }
 
-main a:visited {
-        color: #6a3d9a;
-}
+ header {
+     text-align: center;
+     padding-top: 1rem;
+ }
 
-main a:hover {
-        color: #6a3d9a
-}
+ nav {
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 0.1rem;
+     padding: 0.75rem;
+     background-color: #146574;
+ }
 
-main a:active{
-    color:#c0392b;
+ nav a {
+     color: #ffffff;
+     text-decoration: underline;
+ }
 
-}
+ nav a:hover {
+     color: #e6b33b;
+ }
 
-#about {
-    background-color: hsl(43, 84%, 95%);
-}
+ main {
+     padding: 1.5rem;
+ }
 
-#about p:first-child::first-letter {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #146574;
-}
-#featured{
-    padding-right: 8rem;
-}
-footer {
-    text-align: center;
-    font-size: 0.875rem;
-    padding-top: 0.75rem;
-    padding-bottom: 1.5rem;
-    border-top: 1px solid #999999;
-}
-/* ============================================================
+ main a:link {
+     color: #146574;
+ }
+
+ main a:visited {
+     color: #6a3d9a;
+ }
+
+ main a:hover {
+     color: #6a3d9a
+ }
+
+ main a:active {
+     color: #c0392b;
+
+ }
+
+ #about {
+     background-color: hsl(43, 84%, 95%);
+ }
+
+ #about p:first-child::first-letter {
+     font-size: 2rem;
+     font-weight: bold;
+     color: #146574;
+ }
+
+ #featured {
+     padding-right: 8rem;
+ }
+
+ footer {
+     text-align: center;
+     font-size: 0.875rem;
+     padding-top: 0.75rem;
+     padding-bottom: 1.5rem;
+     border-top: 1px solid #999999;
+ }
+
+ /* ============================================================
    4. Section D: Backgrounds
    ============================================================ */
-body {
-    background-color: #eef0f1;
-   background-image: url(../images/pattern.png);
-}
-#featured{
-    background-image:url(../images/pomodoro.png);
-    background-repeat:no-repeat;
-    background-position: top right;
-}
+ body {
+     background-color: #eef0f1;
+     background-image: url(../images/pattern.png);
+ }
+
+ #featured {
+     background-image: url(../images/pomodoro.png);
+     background-repeat: no-repeat;
+     background-position: top right;
+ }
