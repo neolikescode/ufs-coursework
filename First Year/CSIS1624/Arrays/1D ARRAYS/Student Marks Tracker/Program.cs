@@ -5,53 +5,69 @@ namespace Student_Marks_Tracker___Array
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("---===  Student Grade Tracker  ===---\n");
 
-            //Declared a string array to store the names of the students
-            string[] studentNames =
-                {
-                    "John Smith",
-                    "Sara Jones",
-                    "Mike Brown",
-                    "Amy White"
-                };
+            Console.Write("How many students do you want to grade: ");
+            string students = Console.ReadLine();
 
-            //Declared a 'double' array to store the student marks
-            double[] studentMarks =
-                {
-                    78,
-                    65,
-                    91,
-                    54
-                };
-            //Declared a double variable to store the total score of all the students
-            double dTotal = 0;
+            Console.WriteLine();
 
-            //Declared variables that will store the Highest value and name of student with said highest value
-            double dHighest = studentMarks[0];
-            string sHighest = studentNames[0];
+            int[] marks;
 
-            /*For loop, will loop into the arrays and display each value stored by the arrays
-              since they share the same index*/
-            for (int i = 0; i < studentMarks.Length; i++)
+            int distinctions = 0;
+
+            int fails = 0;
+
+            if (int.TryParse(students, out int numOfStudents) && numOfStudents > 0)
             {
-                Console.WriteLine($"{ studentNames[i]} received {studentMarks[i]}%\n");
+                marks = new int[numOfStudents];
+                bool isValid = true;
 
-                //dTotal will be used to store each mark that is looped through
-                dTotal += studentMarks[i];
-
-                //if statement will determine the highest mark and then the variable sHighest stores the said student's name
-                if (studentMarks[i] > dHighest)
+                for (int i = 0; i < marks.Length; i++)
                 {
-                    dHighest = studentMarks[i];
-                    sHighest = studentNames[i];
+                    do
+                    {
+                        Console.Write($"Input grade for Student {i + 1}: ");
+                        string input = Console.ReadLine();
+
+                        if (int.TryParse(input, out int grade) && grade >= 0 && grade <= 100)
+                        {
+                            marks[i] = grade;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid input. Please enter a value between 0 and 100.");
+                        }
+                    }
+                    while (!isValid);
+                    
                 }
+                Console.Clear();
+                Console.WriteLine("---===  Student Grade Tracker  ===---\n\nGrades entered");
+                foreach (int mark in marks)
+                {
+                        if (mark > 75)
+                        {
+                            distinctions++;
+                        }
+                        else if (mark < 50)
+                        {
+                            fails++;
+                        }
+                    Console.Write($"{mark}%\t");
+                }
+                Console.WriteLine();
+                Console.WriteLine($"\nThe number of Distinctions (>= 75%) found was : {distinctions}");
+                Console.WriteLine($"The number of Failures (< 50%) found was : {fails}");
+                Console.WriteLine();
+                Console.WriteLine($"\nPress any key to exit...");
+
             }
-            //dClassAverage variable will store the Average of the whole class
-            double dClassAverage = dTotal/studentMarks.Length;
-            //Display the results
-            Console.WriteLine("========== RESULTS ==========");
-            Console.WriteLine($"\nCongratulations, The Class Average Is: {dClassAverage:F2}%");
-            Console.WriteLine($"\nThe student with the Highest mark is: {sHighest}");
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid number greater than 0.");
+            }
+            Console.ReadKey();
         }
     }
 }
