@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Student Exam Tracker - Array")]
+[assembly: AssemblyTitle("StudntMarks - JaggedArrays")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Student Exam Tracker - Array")]
+[assembly: AssemblyProduct("StudntMarks - JaggedArrays")]
 [assembly: AssemblyCopyright("Copyright ©  2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("752299d0-5246-46ea-b0f0-0e8f69725608")]
+[assembly: Guid("2dc4e6ef-6d75-412b-9713-3f63bf189a13")]
 
 // Version information for an assembly consists of the following four values:
 //

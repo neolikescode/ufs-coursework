@@ -21,12 +21,13 @@ namespace Student_Marks_Tracker___Array
             if (int.TryParse(students, out int numOfStudents) && numOfStudents > 0)
             {
                 marks = new int[numOfStudents];
-                bool isValid = true;
+                bool isValid;
 
                 for (int i = 0; i < marks.Length; i++)
                 {
                     do
                     {
+                        isValid = true;
                         Console.Write($"Input grade for Student {i + 1}: ");
                         string input = Console.ReadLine();
 
@@ -37,6 +38,7 @@ namespace Student_Marks_Tracker___Array
                         else
                         {
                             Console.WriteLine("Invalid input. Please enter a value between 0 and 100.");
+                            isValid = false;
                         }
                     }
                     while (!isValid);
@@ -46,7 +48,7 @@ namespace Student_Marks_Tracker___Array
                 Console.WriteLine("---===  Student Grade Tracker  ===---\n\nGrades entered");
                 foreach (int mark in marks)
                 {
-                        if (mark > 75)
+                        if (mark >= 75)
                         {
                             distinctions++;
                         }

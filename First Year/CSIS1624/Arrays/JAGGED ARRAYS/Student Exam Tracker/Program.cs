@@ -42,7 +42,7 @@ namespace Student_Exam_Tracker
                 }
                 Console.WriteLine();
                
-                //Calculates the each students average
+                //Calculates teach students average
                 average = total / marks[row].Length;
                 
                 if (average > highestAverage )
