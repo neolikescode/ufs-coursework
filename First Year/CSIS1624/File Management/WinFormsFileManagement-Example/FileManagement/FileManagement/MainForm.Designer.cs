@@ -51,6 +51,7 @@ namespace FileManagement
             this.btnBrowseFolders = new System.Windows.Forms.Button();
             this.txtDirectoryFilePath = new System.Windows.Forms.TextBox();
             this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.dlgSaveFile = new System.Windows.Forms.SaveFileDialog();
             this.grpbxFiles.SuspendLayout();
             this.grpbxDirectories.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +102,7 @@ namespace FileManagement
             this.btnCopy.TabIndex = 6;
             this.btnCopy.Text = "Copy";
             this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
             // 
             // btnCreate
             // 
@@ -121,6 +123,7 @@ namespace FileManagement
             this.btnCreated.TabIndex = 4;
             this.btnCreated.Text = "Created";
             this.btnCreated.UseVisualStyleBackColor = true;
+            this.btnCreated.Click += new System.EventHandler(this.btnCreated_Click);
             // 
             // btnDelete
             // 
@@ -245,5 +248,6 @@ namespace FileManagement
 		private System.Windows.Forms.TextBox txtFilePath;
 		private System.Windows.Forms.Button btnBrowseFiles;
         private System.Windows.Forms.OpenFileDialog dlgOpenFile;
+        private System.Windows.Forms.SaveFileDialog dlgSaveFile;
     }
 }
