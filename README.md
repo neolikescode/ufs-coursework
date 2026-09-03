@@ -21,14 +21,18 @@ Third Year/
 
 - C#
 
-## Technologies & Tools
+## Frameworks & Technologies
 
 - .NET Framework
 - Windows Forms (WinForms)
+- JSON Serialization
+
+## Tools
+
 - Visual Studio
 - Git
 - GitHub
-
+ 
 ## Purpose
 
 This repository documents my academic programming journey and serves as a record of my progress throughout my degree.
