@@ -210,8 +210,30 @@ namespace FileManagement
                 MessageBox.Show("File does not exist.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnBrowseFolders_Click(object sender, EventArgs e)
+        {
+            try
+            { 
+                FolderBrowserDialog dlgFolder = new FolderBrowserDialog();
+                
+
+                if (dlgFolder.ShowDialog() == DialogResult.OK)
+                {
+                    txtDirectoryFilePath.Text = dlgFolderBrowser.SelectedPath;
+                }
+                else
+                {
+                    MessageBox.Show("Enter correct Directory Name.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                } 
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
-
 
 

@@ -52,6 +52,7 @@ namespace FileManagement
             this.txtDirectoryFilePath = new System.Windows.Forms.TextBox();
             this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
             this.dlgSaveFile = new System.Windows.Forms.SaveFileDialog();
+            this.dlgFolderBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.grpbxFiles.SuspendLayout();
             this.grpbxDirectories.SuspendLayout();
             this.SuspendLayout();
@@ -202,6 +203,7 @@ namespace FileManagement
             this.btnBrowseFolders.TabIndex = 4;
             this.btnBrowseFolders.Text = "...";
             this.btnBrowseFolders.UseVisualStyleBackColor = true;
+            this.btnBrowseFolders.Click += new System.EventHandler(this.btnBrowseFolders_Click);
             // 
             // txtDirectoryFilePath
             // 
@@ -249,5 +251,6 @@ namespace FileManagement
 		private System.Windows.Forms.Button btnBrowseFiles;
         private System.Windows.Forms.OpenFileDialog dlgOpenFile;
         private System.Windows.Forms.SaveFileDialog dlgSaveFile;
+        private System.Windows.Forms.FolderBrowserDialog dlgFolderBrowser;
     }
 }

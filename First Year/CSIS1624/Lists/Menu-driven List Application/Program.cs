@@ -81,6 +81,7 @@ namespace Menu_driven_list
                 }
             }
             return 0;
+
         }
         static void AddModules(List<string> modules)
         {
@@ -100,7 +101,9 @@ namespace Menu_driven_list
                 {
                     Console.WriteLine("Please enter a valid module name\n");
                 }
+                Console.WriteLine();
             }
+            Console.WriteLine();
         }
         static void RemoveModules(List<string> modules)
         {
@@ -126,6 +129,7 @@ namespace Menu_driven_list
                         {
                             Console.WriteLine("Please enter a valid module name\n");
                         }
+                        Console.WriteLine();
 
                     }
                     isValid = true;
@@ -135,6 +139,7 @@ namespace Menu_driven_list
                     Console.WriteLine("List is Empty ");
                     isValid = true;
                 }
+                Console.WriteLine();
             }
         }
         static void DisplayModules(List<string> modules)
@@ -164,11 +169,13 @@ namespace Menu_driven_list
                 {
                     Console.Write("Woah, Close Call ");
                 }
+                Console.WriteLine();
             }
             else
             {
                 Console.WriteLine("List is Empty");
             }
+            Console.WriteLine();
         }
     }
 
