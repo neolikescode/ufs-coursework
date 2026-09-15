@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D89E5FB9-1A5D-48C7-9819-CD2A2E3F785F}</ProjectGuid>
+    <ProjectGuid>{70080904-2A34-45D3-BE71-5CFF08364D88}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>BookStoreTracker</RootNamespace>
     <AssemblyName>BookStoreTracker</AssemblyName>
