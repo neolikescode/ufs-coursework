@@ -1,0 +1,350 @@
+/* CSIS1664 (2026) - Class Activity 18 (STUDENT) */
+/* Orbit Observatory - Styling the session table */
+/* Filename: orbit.css */
+
+/* -------- General CSS rules --------  */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: hsl(222, 39%, 11%);
+    background-image: url("../images/stars-tile.png");
+    background-repeat: repeat;
+    color: hsl(210, 20%, 90%);
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    color: hsl(38, 92%, 60%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a:link {
+    color: hsl(38, 92%, 60%);
+}
+
+a:visited {
+    color: hsl(38, 92%, 60%);
+}
+
+a:hover {
+    color: hsl(38, 92%, 75%);
+    text-decoration: underline;
+}
+
+/* Question 1a */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Question 1c: table-layout is added to the same rule, not to a new one. */
+
+/* Question 1b */
+th,
+td {
+    border: 1px solid #8599AD;
+    padding: 8px 12px;
+}
+
+/* Question 2 */
+th {
+    text-align: left;
+    background-color: #1F2937;
+    letter-spacing: 1px;
+}
+
+/* Question 3, changed by Question 5.
+   text-align: center; is the declaration Question 5c adds. A caption
+   element is centred by the browser style sheet, and a figcaption is
+   not, so the centring must now be asked for. The figcaption stands
+   above the table because it is coded before the table inside the
+   figure, which is document order and not a property: caption-side
+   applies to the caption element of a table and has no effect here. */
+figcaption {
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+/* Question 4a */
+tbody tr:nth-child(even) {
+    background-color: #182234;
+}
+
+/* Question 4b: The rule below is the answer, and it is then deleted.
+   td:nth-child(3) {
+       text-align: center;
+   }
+   It centres the start times of the two rows that carry a season heading,
+   and the dome of the three rows that do not, because a merged season
+   cell is not repeated in the rows below it and the data cells of those
+   rows therefore begin one position earlier. Position counts cells that
+   are coded in a row, not columns that appear on the screen. */
+
+
+/* -------- Style class rules --------  */
+
+p.tagline {
+    font-style: italic;
+    font-size: 1.25em;
+    word-spacing: 3px;
+}
+
+p.date {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+article.card {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+article.card:hover {
+    background-image: linear-gradient(to bottom,
+                        rgba(255, 255, 255, 0.1),
+                        rgba(255, 255, 255, 0.03));
+}
+
+img.telescope {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    border: 4px solid #111827;
+    z-index: 2;
+}
+
+/* -------- Section and division rules --------  */
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section,
+aside {
+    padding: 32px 24px;
+    margin-bottom: 24px;
+}
+
+header#site-header {
+    background-image: linear-gradient(to bottom,
+                        rgba(0, 0, 0, 0.85),
+                        rgba(0, 0, 0, 0.35));
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header#site-header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header#site-header nav a {
+    color: hsl(38, 92%, 60%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 8px 16px;
+}
+
+header#site-header nav li {
+    display: inline-block;
+}
+
+header#site-header nav a.current,
+header#site-header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+section#hero {
+    background-image: linear-gradient(to bottom,
+                        rgba(15, 23, 41, 0) 40%,
+                        #111827 100%),
+                        url("../images/hero-nightsky.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 380px;
+}
+
+section#about p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+aside#next-session {
+    border: none;
+    border-left: 4px solid hsl(38, 92%, 60%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.06);
+    position: relative;
+    padding-right: 140px;
+}
+
+section#visit {
+    background-image: url("../images/dome-panorama.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    clear: both;
+}
+
+footer#site-footer {
+    background-image: linear-gradient(135deg, #161e32, #0b0f1d);
+    padding: 24px;
+}
+
+a#to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+/* -------- Print style rules --------  */
+
+@media print {
+    body {
+        font-family: "Times New Roman", Times, serif;
+        color: #000000;
+        background-color: #ffffff;
+        background-image: none;
+    }
+
+    header#site-header,
+    a#to-top {
+        display: none;
+    }
+
+    h1 {
+        color: #000000;
+        text-shadow: none;
+    }
+
+    p.date {
+        color: #000000;
+    }
+
+    section#hero {
+        background-image: none;
+        min-height: auto;
+    }
+
+    h2,
+    h3 {
+        break-after: avoid;
+    }
+
+    article.card {
+        break-inside: avoid;
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}
+
+/* TEACHING NOTES (for discussion when the memo is shown in class):
+
+   The start file of this activity is the Class Activity 16 memo, with
+   the temporary embedded style sheet removed from programme.html. Say
+   so at the start of the session, because the borders the students saw
+   last week have gone and the table looks worse before it looks better.
+
+   Question 1a is worth doing in two saves. Ask the class to look at the
+   table with the borders in place and the default separate borders
+   still in force, and to name the gap they see. That gap is the 2px of
+   border-spacing that the browser style sheet applies, and it is why
+   border-collapse: collapse is the first table declaration anyone
+   writes. Do not ask for a border-spacing declaration anywhere in this
+   activity: Setting it and then collapsing the borders contradicts
+   itself, and border-collapse: separate is the initial value in any
+   case.
+
+   Question 1c is table-layout: fixed. Rendered and measured at 1440x900,
+   the four columns are 218px each once fixed is applied, against widths
+   that differ by more than a hundred pixels before it. Slide 15 needs
+   the qualification that the deck now carries: Equal widths follow only
+   because no cell in the first row has a width of its own. If a student
+   asks, add width: 40%; to a first-row cell and let them watch the
+   remaining width, and not the whole width, being divided among the
+   rest.
+
+   Question 2 is where the class discovers that the season cells and the
+   footer cell are header cells. Several students will expect the rule
+   to reach only the top two rows. It reaches every th in the table,
+   which is a good moment to say that a selector names elements and not
+   positions.
+
+   Question 4b is the centre of the activity and the only question that
+   is meant to fail. Measured on the finished page: with
+   td:nth-child(3) { text-align: center; } in force, the start times of
+   the 21 August and 10 October sessions are centred, and the dome of
+   the other three sessions is centred instead. The reason is that a
+   merged season cell is not repeated in the rows below it, so the data
+   cells of those rows begin one position earlier and the third data
+   cell of the row is not the third column of the table. Let the class
+   see it before you explain it. The lesson to draw is the one the
+   Website Project needs: A positional selector counts the cells that
+   are coded in a row, and a table with merged cells cannot be styled by
+   position alone.
+
+   Question 4a survives this problem, because it counts rows rather than
+   cells, and a merged cell does not remove a row. Worth stating
+   explicitly, since the two questions sit next to each other.
+
+   Rows count among the rows of their own section. Both the head rows
+   and the foot row are row one of their own group, so neither is even
+   and neither is shaded. tbody in the selector is therefore not what
+   protects the head and the foot, and the class should be told so
+   rather than left to assume it. It is written for intent, and as
+   protection if a second heading row is ever added to the body.
+
+   Question 5 is the semantic point of slide 19, and it costs the class
+   one declaration they did not expect. The Question 3 rule needs no
+   caption-side and no text-align, because the browser style sheet puts
+   a caption above the table and centres it. A figcaption inherits
+   neither of those. Position becomes document order, which is why the
+   figcaption is coded before the table, and the centring has to be
+   asked for. Ask the class to move the figcaption below the closing
+   table tag and back again, which takes ten seconds and shows that
+   caption-side has nothing to do with it.
+
+   Two students in every group will try caption-side: top; in Question 3
+   to put the caption where it already is. Measured: it changes nothing,
+   because top is the initial value. Treat it as redundant rather than
+   wrong, and use it to restate the rule that a declaration which
+   restates a default teaches nothing.
+
+   Every rule of this activity is a general rule with an element
+   selector, and none of them needed a page-specific selector. If a
+   second table is ever added to the site, every one of them applies to
+   it unchanged, which is the argument for keeping them general. */

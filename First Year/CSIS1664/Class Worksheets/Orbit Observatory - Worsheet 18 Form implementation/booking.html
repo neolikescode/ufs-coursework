@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!-- CSIS1664 (2026) - Class Activity 18 (STUDENT)
+     Orbit Observatory - A booking form -->
+<!-- Filename: booking.html -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orbit Observatory - Booking</title>
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/orbit.css">
+</head>
+
+<body>
+
+    <!-- *** Site header *** -->
+    <header id="site-header">
+        <p class="logo">Orbit Observatory</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="booking.html" class="current">Booking</a></li>
+                <li><a href="#site-footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- *** Main content *** -->
+    <main>
+
+        <!-- *** Booking *** -->
+        <section id="booking">
+            <h1>Booking</h1>
+            <p>
+                Complete the form below to reserve a place at one of our
+                viewing sessions. We will confirm your booking by email
+                within two working days.
+            </p>
+
+            <!-- *** Code the booking form here (Questions 1 to 6) *** -->
+            <form method="get" action="confirm.html">
+                <div>
+                    <label for="visitor">
+                        Name and surname: <input type="text" id="visitor" name="visitor" autofocus>
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                        Email: <input type="text" id="email" name="email" placeholder="you@example.co.za">
+                    </label>
+                </div>
+                <div>
+                    <label for="session">
+                        Session: <select id="session" name="session">
+                            <option value="2026-09-12">12 September, 18:00, South dome</option>
+                            <option value="2026-10-10" selected>10 October, 18:30, South dome</option>
+                            <option value="2026-10-24">24 October, 19:00, North dome</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    Ticket type:
+                    <br>
+                    <input type="radio" id="adult" name="ticketType" value="adult" checked>
+                    <label for="adult">Adult</label>
+                    <br>
+                    <input type="radio" id="scholar" name="ticketType" value="scholar">
+                    <label for="scholar">Scholar</label>
+                    <br>
+                    <input type="radio" id="pensioner" name="ticketType" value="pensioner">
+                    <label for="pensioner">Pensioner</label>
+                </div>
+                <div>
+                    <label for="requests">
+                        Anything we should know?
+                        <br>
+                        <textarea id="requests" name="requests"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" id="submit-booking" name="submit-booking" value="Request booking">
+                    <input type="button" id="clear-booking" name="clear-booking" value="clear form">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- *** Site footer *** -->
+    <footer id="site-footer">
+        <p>
+            Orbit Observatory, Dewetsdorp Road, Bloemfontein.
+            Telephone 051 555 0142.
+            Electronic mail
+            <a href="mailto:visit@orbitobservatory.co.za">
+                visit@orbitobservatory.co.za
+            </a>
+        </p>
+        <a id="to-top" href="#booking">Back to top</a>
+    </footer>
+
+</body>
+
+</html>
