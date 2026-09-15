@@ -6,53 +6,63 @@ using System.Threading.Tasks;
 
 namespace BookStoreTracker
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("How many books do you want to keep track of? ");
-            string userResponse = Console.ReadLine();
+            Console.Write("======== Book Store Tracker ========\n\n");
+            Console.Write("How many books do you want to enter: ");
+            string sNum = Console.ReadLine();
 
-            if(!string.IsNullOrWhiteSpace(userResponse) && int.TryParse(userResponse, out int arraySize) && arraySize > 0)
+            if (!string.IsNullOrWhiteSpace(sNum) && int.TryParse(sNum, out int iNum))
             {
-                CBook[] books = new CBook[arraySize];
-                
-                decimal dTotal = 0;
-
-                for (int i = 0; i < books.Length; i++)
+                try
                 {
-                    Console.Clear();
-                    books[i] = new CBook(); 
-
-                    Console.Write("Enter book title: ");
-                    string sTitle = Console.ReadLine();
-                    books[i].Title = sTitle;
-
-                    Console.Write("Enter number of pages of the book: ");
-                    int iPage = int.Parse(Console.ReadLine());
-                    books[i].Pages = iPage;
-
-                    Console.Write("Enter book price: ");
-                    decimal dPrice = decimal.Parse(Console.ReadLine());
-                    books[i].Price = dPrice;
-                    dTotal += dPrice;
-                }
-                decimal dAverage = dTotal/books.Length;
-
-                foreach(CBook bookStored in books)
-                {
-                    bookStored.DisplayBookInfo();
+                    //Create an array of type Book storing 3 books
+                    CBook[] books = new CBook[iNum];
                     
-                }
-               Console.WriteLine($" The total average for the books is {dAverage:C2}\n");
+                    //Use a loop to prompt the user for each book's details, clearing the console before each new book
+                    for(int i = 0; i < books.Length; i++)
+                    {
+                        Console.Clear();
+                        //EACH LOOP CREATES A NEW INSTANCE OF CBOOK
+                        books[i] = new CBook();
 
-                Console.WriteLine("Press any key to exit...");
-                Console.ReadKey(true);
+                        //Gets book title & store in appropriate property
+                        Console.Write("Enter book title: ");
+                        string sTitle = Console.ReadLine();
+                        books[i].Title = sTitle;
+
+                        //Gets book length & store in appropriate property
+                        Console.Write("Enter number of pages of the book: ");
+                        int iPages = int.Parse(Console.ReadLine());
+                        books[i].Pages = iPages;
+
+                        //Gets book price & store in appropriate property
+                        Console.Write("Enter book price: ");
+                        decimal dPrice = decimal.Parse(Console.ReadLine());
+                        books[i].Price = dPrice;
+                    }
+                    //Clear the console again once all books have been captured
+                    Console.Clear();
+
+                    //Use a second loop to display each book's details via DisplayBookInfo
+                    foreach(CBook bookInfo in books)
+                    {
+                        bookInfo.DisplayBookInfo();
+                        Console.WriteLine();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
             }
             else
             {
-                Console.WriteLine("Please enter a valid number. ");
+                Console.WriteLine("Please Enter a valid number");
             }
+            Console.WriteLine("Press any key to exit...");
         }
     }
 }
