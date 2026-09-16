@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<!-- CSIS1664 (2026) - Class Activity 19 (Neo Kgatla)
+     Orbit Observatory - Form styling and data validation -->
+<!-- Filename: booking.html -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Orbit Observatory - Booking</title>
+    <link rel="stylesheet"
+          href="styles/modern-normalize.css">
+    <link rel="stylesheet"
+          href="styles/orbit.css">
+</head>
+
+<body>
+
+    <!-- *** Site header *** -->
+    <header id="site-header">
+        <p class="logo">Orbit Observatory</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="booking.html" class="current">Booking</a></li>
+                <li><a href="#site-footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- *** Main content *** -->
+    <main>
+
+        <!-- *** Booking *** -->
+        <section id="booking">
+            <h1>Booking</h1>
+            <p>
+                Complete the form below to reserve a place at one of our
+                viewing sessions. We will confirm your booking by email
+                within two working days.
+            </p>
+
+            <!-- *** Booking form: edit this form for Questions 1 to 3 *** -->
+            <form id="booking-form" method="get" action="confirm.html">
+
+                <fieldset>
+                    <legend>Your details</legend>
+
+                    <div>
+                        <label for="visitor">
+                            Name and surname:
+                            <input type="text" id="visitor" name="visitor"
+                                   autofocus required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="email">
+                            Email:
+                            <input type="email" id="email" name="email"
+                                   placeholder="you@example.co.za" required>
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your booking</legend>
+
+                    <div>
+                        <label for="session">
+                            Session:
+                            <select id="session" name="session">
+                                <option value="2026-09-12">
+                                    12 September, 18:00, South dome
+                                </option>
+                                <option value="2026-10-10" selected>
+                                    10 October, 18:30, South dome
+                                </option>
+                                <option value="2026-10-24">
+                                    24 October, 19:00, North dome
+                                </option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div>
+                        Ticket type:<br>
+                        <input type="radio" id="ticket1" name="ticket"
+                               value="adult" checked>
+                        <label for="ticket1">Adult</label>
+
+                        <input type="radio" id="ticket2" name="ticket"
+                               value="scholar">
+                        <label for="ticket2">Scholar</label>
+
+                        <input type="radio" id="ticket3" name="ticket"
+                               value="pensioner">
+                        <label for="ticket3">Pensioner</label>
+                    </div>
+                    <!-- Question 2 - add new control here -->
+                    <label for="tickets">Number of tickets</label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="6" step="1" value="2" required/>
+                    <div>
+                        <label for="requests">
+                            Anything we should know?<br>
+                            <textarea id="requests" name="requests"></textarea>
+                        </label>
+                    </div>
+
+                </fieldset>
+                <div>
+                    <input type="submit" id="submit-booking"
+                           name="submit-booking" value="Request booking">
+                    <input type="reset" id="clear-booking"
+                           name="clear-booking" value="Clear form">
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- *** Site footer *** -->
+    <footer id="site-footer">
+        <p>
+            Orbit Observatory, Dewetsdorp Road, Bloemfontein.
+            Telephone 051 555 0142.
+            Electronic mail
+            <a href="mailto:visit@orbitobservatory.co.za">
+                visit@orbitobservatory.co.za
+            </a>
+        </p>
+        <a id="to-top" href="#booking">Back to top</a>
+    </footer>
+
+</body>
+
+</html>

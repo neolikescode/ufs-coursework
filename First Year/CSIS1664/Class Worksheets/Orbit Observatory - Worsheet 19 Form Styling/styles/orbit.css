@@ -1,0 +1,343 @@
+/* CSIS1664 (2026) - Class Activity 19 (Neo Kgatla) */
+/* Orbit Observatory - Form styling and data validation */
+/* Filename: orbit.css */
+
+/* -------- General CSS rules --------  */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background-color: hsl(222, 39%, 11%);
+    background-image: url("../images/stars-tile.png");
+    background-repeat: repeat;
+    color: hsl(210, 20%, 90%);
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    color: hsl(38, 92%, 60%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a:link {
+    color: hsl(38, 92%, 60%);
+}
+
+a:visited {
+    color: hsl(38, 92%, 60%);
+}
+
+a:hover {
+    color: hsl(38, 92%, 75%);
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid #8599AD;
+    padding: 8px 12px;
+}
+
+th {
+    text-align: left;
+    background-color: #1F2937;
+    letter-spacing: 1px;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #182234;
+}
+
+/* Question 4a:
+   Every fieldset (create a new rule): Give it a one pixel solid border
+   in #374151, 1.5rem of padding on all four sides, and 2rem of space
+   below it. */
+fieldset {
+    border: 1px solid #374151;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Question 4b:
+   Every legend (create a new rule): Display the text in #93C5FD, in
+   bold, and in small capitals, with 0.5em of padding on the left and on
+   the right. */
+legend {
+    color: #93C5FD;
+    font-weight: bold;
+    font-variant: small-caps;
+    padding: 0 0.5em;
+}
+
+/* Question 5a:
+   Every label (create a new rule): Display it as a block element with a
+   0.25em margin below it. */
+label{
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+/* Question 5b:
+   Every input, select and textarea (create a new rule): Make the
+   control 100% wide with 0.4em of padding, a 0.75em margin below it,
+   and let the font size come from the element that contains it rather
+   than from the browser default. */
+input, select, textarea{
+    width: 100%;
+    padding: 0.4em;
+    margin-bottom: 0.75em;
+    font-size: inherit;
+}
+
+/* Question 6a:
+   A radio button (create a new rule): Set the width to auto and add a
+   0.5em margin to its right. */
+    input[type="radio"]{
+        width: auto;
+        margin-right: 0.5em;
+    }
+
+/* Question 6b:
+   A label that comes immediately after a radio button (create a new
+   rule). Displayed inline, with a 1.5em margin to its right. */
+input[type="radio"] + label{
+    display: inline;
+    margin-right: 1.5em;
+}
+
+/* Question 7a:
+   Every compulsory input (create a new rule). Give it a four pixel
+   solid left border in #2563EB, so that a visitor can see at a glance
+   which values the form insists on. Write the selector as an attribute
+   selector and not as a pseudo-class. */
+    input [required] {
+        border-left: 4px solid #2563EB;
+    }
+
+/* Question 7b:
+   Every input, select and textarea that has the focus (create a new
+   rule). Give it a two pixel solid outline in #FBBF24, offset by two
+   pixels. */
+inptu:focus {
+    outline: 2px solid #FBBF24;
+    outline-offset: 4px;
+}
+
+/* Question 8:
+   Write the selector as an attribute selector that matches the end of
+   an attribute value, so that it reaches the two buttons, whose id
+   values are submit-booking and clear-booking, and nothing else on the
+   page. You may not use the ID selector, and you may not name the two
+   controls separately. 
+   Give the buttons auto width, 0.5em of padding
+   above and below and 1.5em on the left and on the right, 1em margin to
+   the right of each one, bold text in #111827, and a background colour
+   of #FBBF24. */
+
+input[id$="-booking"] {
+    width: auto;
+    padding: 0.5em 1.5em;
+    margin-right: 1em;
+    font-weight: bold;
+    color: #111827;
+    background-color: #FBBF24;
+}
+/* -------- Style class rules --------  */
+
+p.tagline {
+    font-style: italic;
+    font-size: 1.25em;
+    word-spacing: 3px;
+}
+
+p.date {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+article.card {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+article.card:hover {
+    background-image: linear-gradient(to bottom,
+                        rgba(255, 255, 255, 0.1),
+                        rgba(255, 255, 255, 0.03));
+}
+
+img.telescope {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    border: 4px solid #111827;
+    z-index: 2;
+}
+
+/* -------- Section and division rules --------  */
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section,
+aside {
+    padding: 32px 24px;
+    margin-bottom: 24px;
+}
+
+header#site-header {
+    background-image: linear-gradient(to bottom,
+                        rgba(0, 0, 0, 0.85),
+                        rgba(0, 0, 0, 0.35));
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header#site-header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header#site-header nav a {
+    color: hsl(38, 92%, 60%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 8px 16px;
+}
+
+header#site-header nav li {
+    display: inline-block;
+}
+
+header#site-header nav a.current,
+header#site-header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+section#hero {
+    background-image: linear-gradient(to bottom,
+                        rgba(15, 23, 41, 0) 40%,
+                        #111827 100%),
+                        url("../images/hero-nightsky.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 380px;
+}
+
+section#about p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+aside#next-session {
+    border: none;
+    border-left: 4px solid hsl(38, 92%, 60%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.06);
+    position: relative;
+    padding-right: 140px;
+}
+
+section#visit {
+    background-image: url("../images/dome-panorama.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    clear: both;
+}
+
+footer#site-footer {
+    background-image: linear-gradient(135deg, #161e32, #0b0f1d);
+    padding: 24px;
+}
+
+a#to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+/* -------- Print style rules --------  */
+
+@media print {
+    body {
+        font-family: "Times New Roman", Times, serif;
+        color: #000000;
+        background-color: #ffffff;
+        background-image: none;
+    }
+
+    header#site-header,
+    a#to-top {
+        display: none;
+    }
+
+    h1 {
+        color: #000000;
+        text-shadow: none;
+    }
+
+    p.date {
+        color: #000000;
+    }
+
+    section#hero {
+        background-image: none;
+        min-height: auto;
+    }
+
+    h2,
+    h3 {
+        break-after: avoid;
+    }
+
+    article.card {
+        break-inside: avoid;
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}
