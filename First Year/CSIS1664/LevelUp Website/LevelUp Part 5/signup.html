@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- CSIS1664 (Tutorial 8) -->
+<!-- Initials. Surname (Student no.) -->
+<!-- Filename: signup.html -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Your Full Name">
+    <title>LevelUp | Sign up</title>
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/levelup.css">
+</head>
+<body>
+
+<div id="wrapper">
+
+    <header id="top">
+        <img src="images/logo.png" alt="LevelUp logo" width="221" height="140">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#featured">Featured Tip</a>
+        <a href="planner.html">Planner</a>
+        <span class="current">Sign up</span>
+    </nav>
+
+    <main>
+        <h1>Weekly Tip Sign-up</h1>
+
+        <p>One tip a week, written by students who are studying the way you are. Tell us who you are and what you would like to read about, and we will do the rest.</p>
+
+        <!-- Code the sign-up form here -->
+        <form id="signup-form" method="get" target="confirm.html">
+            <div>
+                <label for="fullName">
+                    Full name:
+                </label>
+                <input type="text" id="fullName" name="fullName" required />
+            </div>
+
+            <div>
+                <label for="email">
+                    E-mail address:
+                </label>
+                <input type="email" id="email" name="email" required autocomplete="on" />
+            </div>
+
+            <div>
+                <label for="blog">
+                    Blog or portfolio address:
+                </label>
+                <input type="url" id="blog" name="blog" required />
+            </div>
+
+            <div>
+                <label for="date">
+                    Date you would like the tips to start:
+                </label>
+                <input type="date" id="date" name="date" min="2026-09-21" max="2026-11-06" required />
+            </div>
+
+            <div>
+                <label>
+                    Preferred tip category:
+                    <br />
+                    <select id="category" name="category">
+                        <option value="time">Time management</option>
+                        <option value="study" selected>Study skills</option>
+                        <option value="wellbeing">Well-being</option>
+                    </select>
+                </label>
+            </div>
+
+            <fieldset>
+                <legend>Topics you would like to hear about</legend>
+                <div>
+                    <input type="checkbox" id="notes" name="topics" />
+                    <label for="notes">Note-Taking</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="exams" name="topics" />
+                    <label for="exams">Exam preparation</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="groups" name="topics" />
+                    <label for="groups">Group work</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="frequency">
+                    <input type="range" id="frequency" name="frequency" min="1" max="5"/>
+                </label>
+            </div>
+
+            <div>
+                <label for="text">
+                    What would you like us to cover?
+                </label>
+                <textarea id="text" name="text"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" id="sub" name="sub" value="Sign me up" />
+                <input type="reset" id="res" name="res" value="Clear form" />
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <a href="index.html">LevelUp</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>

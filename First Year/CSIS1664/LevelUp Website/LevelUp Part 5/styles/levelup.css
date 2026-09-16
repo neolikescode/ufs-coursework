@@ -1,0 +1,275 @@
+/* ============================================================
+   LevelUp website
+   CSIS1664 (Tutorial 8): External style sheet
+   Author: Initials. Surname (2029139488)
+   Filename: levelup.css
+   ============================================================ */
+
+
+/* ============================================================
+   1. General CSS rules
+   ============================================================ */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #eef0f1;
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: #146574;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    color: #146574;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+figure {
+    margin: 1.5rem 0;
+}
+
+figcaption {
+    font-size: 1.125rem;
+    color: #146574;
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    border: 1px solid #146574;
+    vertical-align: top;
+}
+
+thead th {
+    background-color: #146574;
+    color: #ffffff;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: hsl(43, 84%, 95%);
+}
+
+
+/* Step 9: The form element (create a new rule)
+   - A margin of 1.5rem at the bottom only. */
+form{
+    margin-bottom: 1.5rem;
+}
+
+/* Step 10: All labels (create a new rule)
+   - Displayed as a block
+   - Bold
+   - A margin of 0.25rem below it. */
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+/* Step 11: All input, select, and textarea elements (create a new
+   rule)
+   - A font family inherited from the parent element
+   - A font size of 1rem
+   - A margin of 0.75rem below it. */
+input, select, textarea{
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Step 12: The label that follows immediately after a check box
+   (create a new rule)
+   - Displayed inline
+   - A normal font weight
+   - A margin of 0.25rem to its left only. */
+input[type="checkbox"] + label{
+    display: inline;
+    font-weight: normal;
+    margin-left: 0.25rem;
+}
+
+/* Step 13: All fieldset elements (create a new rule)
+   - A 1px solid border in the colour #146574
+   - Padding of 1rem on all four sides
+   - A margin of 1.5rem at the bottom only. */
+fieldset {
+    border: 1px solid #146574;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Step 14: All legend elements (create a new rule)
+   - A text colour of #146574
+   - Bold
+   - Padding of 0.5rem on the left and the right only. */
+legend {
+    color: #146574;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+/* Step 15: Only the input elements that are compulsory (create a
+   new rule)
+   - A 4px solid border on the left only, in the colour #146574. */
+input[required] {
+    border-left: 4px solid #146574;
+}
+
+/* Step 16: All input, select, and textarea elements that have the
+   focus (create a new rule)
+   - A 3px solid outline in the colour #e6b33b
+   - An outline offset of 2px. */
+input:focus, select:focus, textarea:focus {
+    outline: 3px solid #e6b33b;
+    outline-offset: 2px;
+}
+
+/* ============================================================
+   2. Style classes
+   ============================================================ */
+
+.quote {
+    font-size: 1.125rem;
+    color: hsl(0, 0%, 35%);
+    margin-left: 2rem;
+    padding-left: 1rem;
+    border-left: 4px solid #e6b33b;
+}
+
+.current {
+    color: #e6b33b;
+    font-weight: bold;
+}
+
+.tips {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.tips li {
+    line-height: 1.8;
+}
+
+.tips li:first-child {
+    font-weight: bold;
+}
+
+
+/* ============================================================
+   3. Sections and divisions
+   ============================================================ */
+
+div#wrapper {
+    width: 60rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+nav {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 0.75rem;
+    background-color: #146574;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e6b33b;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+main a:link {
+    color: #146574;
+}
+
+main a:visited {
+    color: #6a3d9a;
+}
+
+main a:hover {
+    color: #e6b33b;
+}
+
+main a:active {
+    color: #c0392b;
+}
+
+section#about,
+section#featured {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #146574;
+    border-radius: 8px;
+}
+
+section#about {
+    background-color: hsl(43, 84%, 95%);
+}
+
+section#about p:first-child::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #146574;
+}
+
+section#featured {
+    padding-right: 8rem;
+    background-image: url("../images/pomodoro.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.875rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid #999999;
+}
