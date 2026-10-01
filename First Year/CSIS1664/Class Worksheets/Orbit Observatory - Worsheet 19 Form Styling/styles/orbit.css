@@ -111,10 +111,10 @@ input, select, textarea{
 /* Question 6a:
    A radio button (create a new rule): Set the width to auto and add a
    0.5em margin to its right. */
-    input[type="radio"]{
+input[type="radio"]{
         width: auto;
         margin-right: 0.5em;
-    }
+}
 
 /* Question 6b:
    A label that comes immediately after a radio button (create a new
@@ -129,15 +129,15 @@ input[type="radio"] + label{
    solid left border in #2563EB, so that a visitor can see at a glance
    which values the form insists on. Write the selector as an attribute
    selector and not as a pseudo-class. */
-    input [required] {
+input[required] {
         border-left: 4px solid #2563EB;
-    }
+}
 
 /* Question 7b:
    Every input, select and textarea that has the focus (create a new
    rule). Give it a two pixel solid outline in #FBBF24, offset by two
    pixels. */
-inptu:focus {
+input:focus {
     outline: 2px solid #FBBF24;
     outline-offset: 4px;
 }
