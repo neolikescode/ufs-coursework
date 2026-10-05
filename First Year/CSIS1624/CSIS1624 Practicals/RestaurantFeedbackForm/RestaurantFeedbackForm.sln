@@ -1,8 +1,9 @@
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 18
-VisualStudioVersion = 18.7.11925.98 stable
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantFeedbackForm", "RestaurantFeedbackForm\RestaurantFeedbackForm.csproj", "{9A4D2F3B-5C7E-4B3F-AD2A-3E6F8B0C1D22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantFeedbackForm", "RestaurantFeedbackForm\RestaurantFeedbackForm.csproj", "{8F3C1E2A-4B6D-4A2E-9C1F-2D5E7A9B0C11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A4D2F3B-5C7E-4B3F-AD2A-3E6F8B0C1D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A4D2F3B-5C7E-4B3F-AD2A-3E6F8B0C1D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A4D2F3B-5C7E-4B3F-AD2A-3E6F8B0C1D22}.Release|Any CPU.ActiveCfg = Release|AnyCPU
-		{9A4D2F3B-5C7E-4B3F-AD2A-3E6F8B0C1D22}.Release|Any CPU.Build.0 = Release|AnyCPU
+		{8F3C1E2A-4B6D-4A2E-9C1F-2D5E7A9B0C11}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+		{8F3C1E2A-4B6D-4A2E-9C1F-2D5E7A9B0C11}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+		{8F3C1E2A-4B6D-4A2E-9C1F-2D5E7A9B0C11}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+		{8F3C1E2A-4B6D-4A2E-9C1F-2D5E7A9B0C11}.Release|Any CPU.Build.0 = Release|AnyCPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {74ED74CA-7C88-49E6-858D-74276F9704FF}
 	EndGlobalSection
 EndGlobal
