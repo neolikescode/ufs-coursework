@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!-- CSIS1664 (2026) - Class Activity 25
+     Orbit Observatory - FontAwesome icons -->
+<!-- Filename: tonight.html -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Orbit Observatory - Observing Tonight</title>
+    <!-- 1. Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- 2. FontAwesome CSS -->
+    <link rel="stylesheet"
+          href="lib/fontawesome/css/all.min.css">
+    <!-- 3. The Orbit colours (do not edit) -->
+    <link rel="stylesheet"
+          href="styles/orbit-bs.css">
+</head>
+
+<body>
+
+    <!-- ****** nav Start ****** -->
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <!-- Question 3a - Icon: satellite-dish -->
+            <a class="navbar-brand" href="tonight.html"><i class="fa-solid fa-satellite-dish fa-xl "></i>Orbit Observatory</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="tonight.html">Observing Tonight</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Plan a Visit</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ****** nav End ****** -->
+
+    <div class="container">
+
+        <!-- ****** header Start ****** -->
+        <header class="text-md-center">
+            <!-- Question 3b - Icon: binoculars -->
+            <h1><i class="fa-solid fa-binoculars fa-2x"></i>Observing Tonight</h1>
+            <p class="d-none d-md-block">Clear skies, an open dome, every Friday night.</p>
+        </header>
+        <!-- ****** header End ****** -->
+
+        <div class="row">
+
+            <!-- ****** main Start ****** -->
+            <main class="col-lg-8 mb-3 mb-lg-0">
+                <h2>What to look for</h2>
+                <p class="lead">The sky over Bloemfontein is clear tonight. Our volunteers have
+                   chosen three targets for the evening session. Ask at the dome
+                   for a turn at the eyepiece.</p>
+
+                <div class="row g-3">
+                    <div class="col-md-6 col-xl-4">
+                        <article class="card h-100 text-bg-dark border-primary">
+                            <img src="images/moon.png"
+                                 alt="A waxing gibbous Moon in a starry sky" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning">The Moon</h3>
+                                <p class="card-text">A waxing gibbous Moon rises in the east soon after sunset.
+                                   Look along the line between light and shadow, where the
+                                   craters stand out most clearly.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="card h-100 text-bg-dark border-primary">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning">Jupiter</h3>
+                                <p class="card-text">The largest planet rises in the north-east at about 21:00.
+                                   Even a small telescope shows its cloud bands and up to four
+                                   of its moons.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xl-4">
+                        <article class="card h-100 text-bg-dark border-primary">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning">The Orion Nebula</h3>
+                                <p class="card-text">Below the three stars of Orion's belt lies a cloud where new
+                                   stars are forming. Through the large telescope it glows a
+                                   soft green-grey.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </main>
+            <!-- ****** main End ****** -->
+
+            <!-- ****** aside Start ****** -->
+            <aside class="col-lg-4">
+                <h2>Viewing conditions</h2>
+                <!-- Question 2 - Icons: cloud, moon, temperature-half -->
+                <ul class="fa-ul">
+                    <li><span class="fa-list"><i class="fa-solid fa-cloud"></i></span> Cloud cover: 5%</li>
+                    <li><span class="fa-list"><i class="fa-solid fa-moon"></i></span> Moon rise: 17:42</li>
+                    <li><span class="fa-list"><i class="fa-solid fa-temperature-half"></i></span> Temperature at 21:00: 12 &deg;C</li>
+                </ul>
+                <!-- Question 4b - Icon: hand-point-right -->
+                <a href="mailto:bookings@orbit-observatory.example" class="btn btn-warning btn-lg">Book a turn at the eyepiece <i class="fa-solid fa-hand-point-right fa-rotate-180 fa-flip-horizontal"></i></a>
+            </aside>
+            <!-- ****** aside End ****** -->
+
+        </div>
+
+        <!-- ****** footer Start ****** -->
+        <footer>
+            <p>Orbit Observatory, Bloemfontein</p>
+            <!-- Question 1 - Icons: facebook, instagram -->
+            <p>
+                <a href="https://www.facebook.com/" class="me-3" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="me-3" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </p>
+            <!-- Question 4a - Icon: arrow-right -->
+            <p><a href="#"><i class="fa-solid fa-arrow-right fa-rotate-270"></i> Back to top</a></p>
+        </footer>
+        <!-- ****** footer End ****** -->
+
+    </div>
+
+    <!-- Bootstrap JavaScript bundle -->
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
