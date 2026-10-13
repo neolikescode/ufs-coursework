@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- CSIS1664 (2026) - Class Activity 20 (STUDENT 2029139488)
+     Orbit Observatory - A responsive page with the Bootstrap grid -->
+<!-- Filename: tonight.html -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orbit Observatory - Observing Tonight</title>
+    <!-- 1. Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- 2. The Orbit colours (do not edit) -->
+    <link rel="stylesheet" href="styles/orbit-bs.css">
+</head>
+
+<body>
+
+    <!-- Question 1 - The container (add a new division):
+         Wrap everything from the header element to the footer element in a
+         div element. Add a Bootstrap class that gives the page a responsive,
+         fixed-width container. -->
+    <div class="container">
+        <!-- ****** header Start ****** -->
+        <header class="text-md-center">
+            <p class="logo">Orbit Observatory</p>
+            <h1>Observing Tonight</h1>
+        </header>
+        <!-- ****** header End ****** -->
+
+        <!-- Question 2a - Wrap the main element and the aside element together
+             in a div element that creates a row. -->
+
+        <div class="row">
+            <!-- ****** main Start ****** -->
+            <!-- Question 2b - From 992px (the large breakpoint) upwards, the main
+                     element takes two thirds of the row and the aside element one third.
+                     Below 992px, both are the full width of the row, with the main
+                     element first. Add one class to the main element and one class to
+                     the aside element. -->
+            <main class="col-lg-8 mb-3 mb-lg-0">
+                <h2>What to look for</h2>
+                <p class="lead">The sky over Bloemfontein is clear tonight. Our volunteers have
+                    chosen three targets for the evening session. Ask at the dome
+                    for a turn at the eyepiece.</p>
+
+                <!-- Question 3a - Inside the main element, wrap the three article
+                         elements together in a div element that creates a row. -->
+                <!-- Question 3b - Give each article element two classes, so that the
+                         three articles are stacked one above the other below 768px, sit
+                         two per line from 768px (the medium breakpoint) upwards, and sit
+                         three on one line from 1200px (the extra-large breakpoint)
+                         upwards. -->
+                <div class="row">
+                    <article class="col-md-6 col-xl-4 mb-3">
+                        <h3>The Moon</h3>
+
+                        <!-- Question 3 - The image is wider than the article and
+                              spills out of it. Make the image scale down with its
+                              article, and round its corners. Add two classes. -->
+                        <img src="images/moon.png" alt="A waxing gibbous Moon in a starry sky "
+                            class="img-fluid rounded">
+                        <p>A waxing gibbous Moon rises in the east soon after sunset.
+                            Look along the line between light and shadow, where the
+                            craters stand out most clearly.</p>
+                    </article>
+                    <article class="col-md-6 col-xl-4 mb-3">
+                        <h3>Jupiter</h3>
+                        <p>The largest planet rises in the north-east at about 21:00.
+                            Even a small telescope shows its cloud bands and up to four
+                            of its moons.</p>
+                    </article>
+                    <article class="col-md-6 col-xl-4 mb-3">
+                        <h3>The Orion Nebula</h3>
+                        <p>Below the three stars of Orion's belt lies a cloud where new
+                            stars are forming. Through the large telescope it glows a
+                            soft green-grey.</p>
+                    </article>
+                </div>
+            </main>
+            <!-- ****** main End ****** -->
+
+            <!-- ****** aside Start ****** -->
+            <aside class="col-lg-4">
+                <h2>Viewing conditions</h2>
+                <p>Cloud cover: 5%</p>
+                <p>Moon rise: 17:42</p>
+                <p>Temperature at 21:00: 12 &deg;C</p>
+
+                <!-- Question 4 - Style this link as a large button in the warning
+                      colour. Add three classes. -->
+                <a href="mailto:bookings@orbit-observatory.example" class="btn btn-warning btn-lg">Book a turn at
+                    the eyepiece</a>
+            </aside>
+            <!-- ****** aside End ****** -->
+
+        </div>
+        <!-- ****** footer Start ****** -->
+        <footer>
+            <p>Orbit Observatory, Bloemfontein</p>
+        </footer>
+        <!-- ****** footer End ****** -->
+
+    </div>
+    <!-- Bootstrap JavaScript bundle -->
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
