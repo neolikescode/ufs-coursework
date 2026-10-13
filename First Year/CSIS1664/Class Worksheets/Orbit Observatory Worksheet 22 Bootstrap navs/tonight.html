@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<!-- CSIS1664 (2026) - Class Activity 22
+     Orbit Observatory - The Bootstrap navbar -->
+<!-- Filename: tonight.html -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orbit Observatory - Observing Tonight</title>
+    <!-- 1. Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- 2. The Orbit colours (do not edit) -->
+    <link rel="stylesheet" href="styles/orbit-bs.css">
+</head>
+
+<body>
+
+    <!-- ****** nav Start ****** -->
+    <!-- Question 1 - Turn the nav element into a Bootstrap navbar that
+         expands (shows its links in a row) from the medium breakpoint
+         upwards. Add two classes. -->
+    <!-- Question 4 - Give the navbar a dark background, and switch the
+         navbar to Bootstrap's dark colour theme so that its text turns
+         light. Add one attribute and one class. -->
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <!-- Question 2 - Wrap the brand link and the ul element in a new
+             div element. Give the new div element the same class as the
+             div element directly below the nav element, which holds the
+             rest of the page. -->
+        <div class="container">
+            <!-- Question 3 - Add the navbar classes to the brand link, the
+                         ul element, every list item, and every link in the list.
+                         Mark the link to the current page as the active one. -->
+            <a href="tonight.html" class="navbar-brand">Orbit Observatory</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="tonight.html" class="nav-link active" aria-current="page">Observing
+                        Tonight</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Plan a Visit</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ****** nav End ****** -->
+
+    <div class="container">
+
+        <!-- ****** header Start ****** -->
+        <header class="text-md-center">
+            <h1>Observing Tonight</h1>
+            <p class="d-none d-md-block">Clear skies, an open dome, every Friday night.</p>
+        </header>
+        <!-- ****** header End ****** -->
+
+        <div class="row">
+
+            <!-- ****** main Start ****** -->
+            <main class="col-lg-8 mb-3 mb-lg-0">
+                <h2>What to look for</h2>
+                <p class="lead">The sky over Bloemfontein is clear tonight. Our volunteers have
+                    chosen three targets for the evening session. Ask at the dome
+                    for a turn at the eyepiece.</p>
+
+                <div class="row">
+                    <article class="col-md-6 col-xl-4 mb-3">
+                        <h3>The Moon</h3>
+                        <img src="images/moon.png" alt="A waxing gibbous Moon in a starry sky"
+                            class="img-fluid rounded">
+                        <p>A waxing gibbous Moon rises in the east soon after sunset.
+                            Look along the line between light and shadow, where the
+                            craters stand out most clearly.</p>
+                    </article>
+                    <article class="col-md-6 col-xl-4 mb-3">
+                        <h3>Jupiter</h3>
+                        <p>The largest planet rises in the north-east at about 21:00.
+                            Even a small telescope shows its cloud bands and up to four
+                            of its moons.</p>
+                    </article>
+                    <article class="col-xl-4 mb-3">
+                        <h3>The Orion Nebula</h3>
+                        <p>Below the three stars of Orion's belt lies a cloud where new
+                            stars are forming. Through the large telescope it glows a
+                            soft green-grey.</p>
+                    </article>
+                </div>
+            </main>
+            <!-- ****** main End ****** -->
+
+            <!-- ****** aside Start ****** -->
+            <aside class="col-lg-4">
+                <h2>Viewing conditions</h2>
+                <p>Cloud cover: 5%</p>
+                <p>Moon rise: 17:42</p>
+                <p>Temperature at 21:00: 12 &deg;C</p>
+                <a href="mailto:bookings@orbit-observatory.example" class="btn btn-warning btn-lg">Book a turn at the
+                    eyepiece</a>
+            </aside>
+            <!-- ****** aside End ****** -->
+
+        </div>
+
+        <!-- ****** footer Start ****** -->
+        <footer>
+            <p>Orbit Observatory, Bloemfontein</p>
+        </footer>
+        <!-- ****** footer End ****** -->
+
+    </div>
+
+    <!-- Bootstrap JavaScript bundle -->
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
