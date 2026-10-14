@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- CSIS1664 (2026) - Class Activity 24
+     Orbit Observatory - Bootstrap forms and tables -->
+<!-- Filename: programme.html -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orbit Observatory - Programme</title>
+    <!-- 1. Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- 2. The Orbit colours (do not edit) -->
+    <link rel="stylesheet" href="styles/orbit-bs.css">
+</head>
+
+<body>
+
+    <!-- ****** header Start ****** -->
+    <header>
+        <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="programme.html">Orbit Observatory</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="programme.html">Programme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ****** header End ****** -->
+
+    <!-- ****** main Start ****** -->
+    <main class="container">
+        <h1>Session programme</h1>
+        <p>
+            The table below lists every public viewing session for
+            2026. Bookings close at noon on the day of a session.
+        </p>
+
+        <!-- Question 1 - Style the table, its header, and its caption. -->
+        <table class="table table-striped table-hover caption-top">
+            <caption>Viewing sessions for 2026</caption>
+
+            <thead class="table-dark">
+                <tr>
+                    <th rowspan="2">Season</th>
+                    <th colspan="3">Session details</th>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <th>Start</th>
+                    <th>Dome</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="3">Winter</th>
+                    <td>21 August</td>
+                    <td>19:00</td>
+                    <td>North</td>
+                </tr>
+                <tr>
+                    <td>29 August</td>
+                    <td>18:30</td>
+                    <td>North</td>
+                </tr>
+                <tr>
+                    <td>12 September</td>
+                    <td>18:00</td>
+                    <td>South</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Spring</th>
+                    <td>10 October</td>
+                    <td>18:30</td>
+                    <td>South</td>
+                </tr>
+                <tr>
+                    <td>24 October</td>
+                    <td>19:00</td>
+                    <td>North</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="3">Sessions this year</th>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <p>The observatory is closed in November for maintenance.</p>
+    </main>
+    <!-- ****** main End ****** -->
+
+    <!-- ****** footer Start ****** -->
+    <footer class="container">
+        <p>
+            Orbit Observatory, Dewetsdorp Road, Bloemfontein.
+            Telephone 051 555 0142.
+        </p>
+    </footer>
+    <!-- ****** footer End ****** -->
+
+    <!-- Bootstrap JavaScript bundle -->
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

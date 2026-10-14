@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!-- CSIS1664 (2026) - Class Activity 24
+     Orbit Observatory - Bootstrap forms and tables -->
+<!-- Filename: booking.html -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orbit Observatory - Booking</title>
+    <!-- 1. Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- 2. The Orbit colours (do not edit) -->
+    <link rel="stylesheet" href="styles/orbit-bs.css">
+</head>
+
+<body>
+
+    <!-- ****** header Start ****** -->
+    <header>
+        <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="programme.html">Orbit Observatory</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="programme.html">Programme</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ****** header End ****** -->
+
+    <!-- ****** main Start ****** -->
+    <main class="container">
+        <h1>Booking</h1>
+        <p>
+            Complete the form below to reserve a place at one of our
+            viewing sessions. We will confirm your booking by email
+            within two working days.
+        </p>
+
+        <form id="booking-form" method="get" action="confirm.html">
+
+            <fieldset>
+                <legend>Your details</legend>
+
+                <!-- Question 2 - Add the Bootstrap classes to the label and input. -->
+                <div class="mb-3">
+                    <label for="visitor" class="form-label">Name and surname:</label>
+                    <input type="text" id="visitor" name="visitor" class="form-control" autofocus required>
+                </div>
+
+                <!-- Question 3 - Mark the email field as invalid and add its
+                     feedback message. -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control is-invalid"
+                        placeholder="youexample.co.za" required>
+                    <div class="invalid-feedback">Enter an email address such as you@example.co.za.
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Your booking</legend>
+
+                <!-- Question 4a - Style the select list. -->
+                <div class="mb-3">
+                    <label for="session" class="form-label">Session:</label>
+                    <select id="session" name="session" form-select>
+                        <option value="2026-09-12">
+                            12 September, 18:00, South dome
+                        </option>
+                        <option value="2026-10-10" selected>
+                            10 October, 18:30, South dome
+                        </option>
+                        <option value="2026-10-24">
+                            24 October, 19:00, North dome
+                        </option>
+                    </select>
+                </div>
+
+                <!-- Question 4b - Turn each radio button div into a check, and place
+                     the three choices next to each other. -->
+                <div class="mb-3">
+                    Ticket type:<br>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="ticket1" name="ticket" value="adult" class="form-check-input" checked>
+                        <label for="ticket1" class="form-check-label">Adult</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="ticket2" name="ticket" class="form-check-input" value="scholar">
+                        <label for="ticket2" class="form-check-label">Scholar</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="ticket3" name="ticket" class="form-check-input" value="pensioner">
+                        <label for="ticket3" class="form-check-label">Pensioner</label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="mb-3">
+                    <label for="tickets" class="form-label">Number of tickets:</label>
+                    <input type="number" class="form-control" id="tickets" name="tickets" min="1" max="6" step="1"
+                        value="2" class="form-control" required>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="mb-3">
+                    <label for="requests" class="form-label">Anything we should know?</label>
+                    <textarea id="requests" name="requests" class="form-control"></textarea>
+                </div>
+
+            </fieldset>
+
+            <!-- Question 4c - Style the two buttons. -->
+            <div>
+                <input type="submit" id="submit-booking" name="submit-booking" class="btn btn-primary"
+                    value="Request booking">
+                <input type="reset" id="clear-booking" name="clear-booking" class="btn btn-outline-light"
+                    value="Clear form">
+            </div>
+
+        </form>
+    </main>
+    <!-- ****** main End ****** -->
+
+    <!-- ****** footer Start ****** -->
+    <footer class="container">
+        <p>
+            Orbit Observatory, Dewetsdorp Road, Bloemfontein.
+            Telephone 051 555 0142.
+        </p>
+    </footer>
+    <!-- ****** footer End ****** -->
+
+    <!-- Bootstrap JavaScript bundle -->
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
