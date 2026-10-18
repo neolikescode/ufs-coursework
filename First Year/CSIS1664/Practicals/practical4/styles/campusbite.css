@@ -1,0 +1,55 @@
+/*
+    NN. Kgatla (2029139488)
+    CSIS1664 (2026) - Practical 4
+    File name: campusbite.css
+*/
+
+/* **************************************************************
+   Add each rule below the comment that describes it.
+   Keep the rules in this order. Use only the colour codes that
+   are given in the assignment document.
+   ************************************************************** */
+
+
+/* Step 3.2 - The entire page */
+body {
+    color: #1f2937;
+    background-color: #fff7ed;
+
+}
+
+/* Step 3.3 - The header section */
+header {background-color: #fde7d3;}
+
+
+/* Step 3.4 - All level-1 and level-2 headings */
+h1, h2 {color: #9a3412;}
+
+
+/* Step 3.5 - The nav section */
+
+nav {background-color: #c2410c;}
+
+/* Step 3.6 - All hyperlinks inside the nav section */
+
+nav a:link {color: #ffffff;}
+
+/* Step 3.7 - Mouse pointer over a hyperlink inside the nav section */
+
+nav a:hover {background-color: #9a3412;}
+
+/* Step 3.8 - Elements that use the tip style class */
+
+.tip {color:#7c2d12;}
+
+/* Step 3.9 - The element with the ID plan-ahead */
+
+#plan-ahead{background-color:#fef3e8;}
+
+/* Step 3.10 - Blockquotes inside the element with the ID plan-ahead */
+
+#plan-ahead blockquote{color:#7c2d12;}
+
+/* Step 3.11 - Unvisited and visited hyperlinks inside the footer */
+footer a:link{color:#c2410c;}
+
