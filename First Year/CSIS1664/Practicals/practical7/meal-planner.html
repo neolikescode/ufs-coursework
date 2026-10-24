@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- NN. Kgatla (2029139488) -->
+<!-- CSIS1664 (2026) - Practical 6 -->
+<!-- File name: meal-planner.html -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A simple weekly meal planner for students who want to cook once, shop once, and eat well for the rest of the week.">
+    <meta name="author" content="NN. Kgatla">
+    <title>CampusBite &ndash; Meal planner</title>
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/campusbite.css">
+</head>
+<body>
+    <div id="container">
+        <!-- ================= HEADER (start) ================= -->
+        <header id="top">
+            <h1><img src="images/logo.png" alt="CampusBite" width="240" height="64"></h1>
+            <p>
+                Easy meals for small kitchens &amp; busy weeks<br>
+                Plan once, shop once, eat well all week.
+            </p>
+        </header>
+        <!-- ================= HEADER (end) ================= -->
+        <!-- ================= NAVIGATION (start) ================= -->
+        <nav>
+            <!-- Steps 4.1 and 4.2 - Copy the complete navigation markup from index.html, and use it to replace the paragraph below -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meal-planner.html" class="current">Meal planner</a></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+        </nav>
+        <!-- ================= NAVIGATION (end) ================= -->
+        <!-- Step 4.4 - Wrap both the main element and the aside element in a single division with the ID middle -->
+        <div id="middle">
+            <!-- ================= MAIN (start) ================= -->
+            <main>
+                <!-- **** Section 1: week-ahead (start) **** -->
+                <section id="week-ahead">
+                    <h2>Plan the Week Ahead</h2>
+                    <article>
+                        <figure>
+                            <img src="images/kitchen.png" alt="A bowl of hot food" width="240" height="160">
+                            <figcaption>
+                                Cooking a double portion takes no longer than cooking a single portion twice.
+                            </figcaption>
+                        </figure>
+                        <p>
+                            A week of meals is far easier to manage when it is
+                            written down before you shop. Choose three evening
+                            meals that share ingredients, cook a double portion of
+                            one of them, and carry the second portion into the
+                            next day as lunch.
+                        </p>
+                        <p>
+                            Leave one evening open for whatever is still in the
+                            fridge. That single habit removes most of the waste at
+                            the end of the week, and it removes the decision you
+                            are least able to make on a Thursday evening.
+                        </p>
+                    </article>
+                    <p class="tip">
+                        Write the list before you go, and then shop from the list
+                        rather than from the shelves.
+                    </p>
+                </section>
+                <!-- **** Section 1: week-ahead (end) **** -->
+                <!-- **** Section 2: one-trip (start) **** -->
+                <section id="one-trip">
+                    <h2>One Shopping Trip</h2>
+                    <p>
+                        Group the list by where things sit in the shop: Dry goods,
+                        fresh produce, and the cold section. One trip through the
+                        shop is quicker, and it keeps you out of the aisles you
+                        did not plan to visit.
+                    </p>
+                    <p>
+                        Buy the fresh items last, so that they spend the least
+                        time out of the fridge on the way home.
+                    </p>
+                </section>
+                <!-- **** Section 2: one-trip (end) **** -->
+                <!-- **** Section 3: cook-once (start) **** -->
+                <section id="cook-once">
+                    <h2>Cook Once, Eat Twice</h2>
+                    <p>
+                        A pot of soup, a tray of roasted vegetables, or a pan of
+                        pasta sauce will all keep for two or three days in the
+                        fridge. Cook the batch on the evening you have the most
+                        time, and portion it before you sit down to eat.
+                    </p>
+                    <p class="tip">
+                        Label each container with the date, so that nothing is
+                        kept for longer than it should be.
+                    </p>
+                </section>
+                <!-- **** Section 3: cook-once (end) **** -->
+                <section id="this-week">
+                    <h2>
+                        This Week at a Glance
+                    </h2>
+                    <p>
+                        One evening meal carries into the next day as lunch, and one pot covers two evenings. The weekend is left open.
+                    </p>
+
+                    <table>
+                        <caption>
+                            Table 1: A worked example of a single week
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Evening meal</th>
+                                <th>Next-day lunch</th>
+                                <th>Equipment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>One-pan pasta</td>
+                                <td>Cold pasta salad</td>
+                                <td>One hotplate</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Tuesday</td>
+                                <td rowspan="2">Lentil soup, cooked as a double batch</td>
+                                <td>Soup with bread</td>
+                                <td>One hotplate</td>
+                            </tr>
+
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>Soup with rice</td>
+                                <td>Microwave</td>
+                            </tr>
+
+                            <tr>
+                                <td>Thursday</td>
+                                <td>Vegetable stir-fry</td>
+                                <td>Stir-fry wrap</td>
+                                <td>One hotplate</td>
+                            </tr>
+
+                            <tr>
+                                <td>Friday</td>
+                                <td>Baked potato with beans</td>
+                                <td>Potato salad</td>
+                                <td>Microwave</td>
+                            </tr>
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Saturday and Sunday are left open for whatever is still in the fridge.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </main>
+            <!-- ================= MAIN (end) ================= -->
+            <!-- Step 4.3 - Add an aside element here, after the closing tag of the main element -->
+            <aside>
+                <h2>
+                    Equipment
+                </h2>
+                <p>
+                    Plan around the equipment you can actually use.
+                </p>
+                <ul>
+                    <li>Kettle</li>
+                    <li>Microwave</li>
+                    <li>One hotplate</li>
+                    <li>One sharp knife</li>
+                    <li>Two sealed containers</li>
+                </ul>
+            </aside>
+        </div>
+        <!-- ================= FOOTER (start) ================= -->
+        <footer>
+            <hr>
+            <p>Created by: <a href="../myindex.html">NN. Kgatla (2029139488)</a></p>
+            <p>&copy; 2026 CampusBite. Recipes &amp; ideas shared by students.</p>
+            <p><a href="#top">Back to top</a></p>
+        </footer>
+        <!-- ================= FOOTER (end) ================= -->
+    </div>
+</body>
+</html>
