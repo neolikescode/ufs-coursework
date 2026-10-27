@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- NN. Kgatla 2029139488 -->
+<!-- CSIS1664 (2026) - Practical 9 -->
+<!-- File name: meal-planner.html -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A simple weekly meal planner for students who want to cook once, shop once, and eat well for the rest of the week.">
+        <meta name="author" content="NN. Kgatla">
+        <title>CampusBite &ndash; Meal planner</title>
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/campusbite.css">
+    </head>
+    <body>
+        <!-- ================= LOGO ================= -->
+        <p><img src="images/logo.png" alt="CampusBite" width="240" height="64"></p>
+
+        <!-- ================= NAVIGATION (start) ================= -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meal-planner.html">Meal planner</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- ================= NAVIGATION (end) ================= -->
+
+        <!-- ================= CONTAINER (start) ================= -->
+        <div class="container">
+            <header>
+                <h1>Easy meals for small kitchens &amp; busy weeks</h1>
+                <p>Plan once, shop once, eat well all week.</p>
+            </header>
+
+            <!-- ================= MAIN (start) ================= -->
+            <main>
+                <!-- **** Section 1: week-ahead (start) **** -->
+                <section id="week-ahead">
+                    <h2>Plan the Week Ahead</h2>
+                    <p>
+                        A week of meals is far easier to manage when it is written
+                        down before you shop. Three steps are enough.
+                    </p>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+                            <div class="col">
+                                <article class="card h-100 border border-danger">
+                                    <p class="card-header">Step 1</p>
+                                    <img src="images/plan.png" class="card-img-top" alt="A weekly planner with three meals marked">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Plan the Week</h3>
+                                        <p class="card-text">Choose three evening meals that share ingredients, cook a double portion of one of them, and leave one evening open for whatever is still in the fridge.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="card h-100 border border-danger">
+                                    <p class="card-header">Step 2</p>
+                                    <img src="images/shop.png" class="card-img-top" alt="A shopping bag with a short list">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Shop Once</h3>
+                                        <p class="card-text">Group the list by where things sit in the shop, and buy the fresh items last, so that they spend the least time out of the fridge.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="card h-100 border border-danger">
+                                    <p class="card-header">Step 3</p>
+                                    <img src="images/cook.png" class="card-img-top" alt="A pot on a single hotplate">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Cook Once, Eat Twice</h3>
+                                        <p class="card-text">Cook the batch on the evening you have the most time, and portion it before you sit down to eat.</p>
+                                    </div>
+                                </article>
+                            </div>
+                    </div>
+                </section>
+                <!-- **** Section 1: week-ahead (end) **** -->
+
+                <!-- **** Section 2: this-week (start) **** -->
+                <section id="this-week">
+                    <h2>This Week at a Glance</h2>
+                    <p>
+                        One evening meal carries into the next day as lunch, and
+                        one pot covers two evenings. The weekend is left open.
+                    </p>
+                    <table>
+                        <caption>Table 1: A worked example of a single week</caption>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Evening meal</th>
+                                <th>Next-day lunch</th>
+                                <th>Equipment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>One-pan pasta</td>
+                                <td>Cold pasta salad</td>
+                                <td>One hotplate</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td rowspan="2">Lentil soup, cooked as a double batch</td>
+                                <td>Soup with bread</td>
+                                <td>One hotplate</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>Soup with rice</td>
+                                <td>Microwave</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>Vegetable stir-fry</td>
+                                <td>Stir-fry wrap</td>
+                                <td>One hotplate</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>Baked potato with beans</td>
+                                <td>Potato salad</td>
+                                <td>Microwave</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    Saturday and Sunday are left open for whatever
+                                    is still in the fridge.
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <!-- **** Section 2: this-week (end) **** -->
+            </main>
+            <!-- ================= MAIN (end) ================= -->
+
+            <!-- ================= FOOTER (start) ================= -->
+            <footer>
+                <hr>
+                <p>Created by: <a href="../myindex.html">NN. Kgatla 2029139488</a></p>
+                <p>&copy; 2026 CampusBite. Recipes &amp; ideas shared by students.</p>
+            </footer>
+            <!-- ================= FOOTER (end) ================= -->
+        </div>
+        <!-- ================= CONTAINER (end) ================= -->
+
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

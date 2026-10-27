@@ -1,0 +1,75 @@
+/*
+    NN. Kgatla (2029139488)
+    CSIS1664 (2026)
+    File name: campusbite.css
+*/
+
+/* **************************************************************
+   Practical 9: Do NOT change this style sheet.
+   Bootstrap does the styling in this practical. The only rules
+   left here style the table on meal-planner.html, and print the
+   pages. Everything else was removed so that it cannot interfere
+   with the Bootstrap classes you add.
+   ************************************************************** */
+
+
+/* ==============================================================
+   1. GENERAL CSS RULES
+   ============================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 1rem 0;
+}
+
+caption {
+    caption-side: bottom;
+    font-style: italic;
+    font-size: 0.85rem;
+    padding-top: 0.5rem;
+}
+
+th, td {
+    border: 1px solid #fde7d3;
+    padding: 0.5rem 0.75rem;
+    vertical-align: top;
+}
+
+thead th {
+    color: #ffffff;
+    background-color: #9a3412;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff7ed;
+}
+
+th:first-child, td:first-child {
+    width: 22%;
+}
+
+
+/* ==============================================================
+   2. PRINT STYLING
+   ============================================================== */
+@media print {
+    nav {
+        display: none;
+    }
+
+    body {
+        color: #000000;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    h2 {
+        break-after: avoid;
+    }
+
+    tr {
+        break-inside: avoid;
+    }
+}
