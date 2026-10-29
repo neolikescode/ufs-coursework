@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)https://ufs.blackboard.com/bbcswebdav/internal/courses/M202600867/gradebook/notesAndFeedback/attempt/_13127688_1/Kgatla_NN_2029139488_ModuleExam1_report.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Module Exam 1 Marker Report — NN. Kgatla (2029139488)</title><style>
+:root {
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --page-bg: #f8fafc;
+  --ink: #0f172a;
+  --ink-muted: #64748b;
+  --ink-faint: #94a3b8;
+  --ink-body: #475569;
+  --rule: #e2e8f0;
+  --rule-faint: #f1f5f9;
+  --fail: #dc2626;
+  --warn: #d97706;
+  --info: #2563eb;
+  --pass: #059669;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); background: var(--page-bg); color: var(--ink); line-height: 1.6; }
+h1, h2, h3, p { margin: 0; }
+
+.hdr { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #2563eb 100%); color: #fff; padding: 36px 48px; }
+.hdr-inner { max-width: 1040px; margin: 0 auto; }
+.hdr h1 { font-size: 26px; font-weight: 800; letter-spacing: -.02em; }
+.hdr .subtitle { font-size: 14px; opacity: .82; max-width: 74ch; margin: 8px 0 0; }
+
+.content { max-width: 1040px; margin: 0 auto; padding: 32px 48px 56px; }
+.section-title { font-size: 18px; font-weight: 700; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--rule); }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+.stat { background: #fff; border: 1px solid var(--rule); border-radius: 12px; padding: 20px; text-align: center; }
+.stat .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-muted); margin-bottom: 6px; }
+.stat .value { font-size: 32px; font-weight: 800; line-height: 1; }
+/* The Mark card (2026-07-31, tutor request -- see docs/DECISIONS.md): the
+   same light-blue shading the standalone mark pill used to carry, now on
+   the one stat card it actually belongs to instead of duplicated a few
+   pixels away. */
+.stat.mark { background: #eff6ff; border-color: #bfdbfe; }
+.stat.mark .value { color: #1e40af; }
+
+/* The Final Percentage pill (2026-07-31, tutor request -- see docs/DECISIONS.md):
+   reintroduced above the stats block to carry the one figure the Mark
+   stat card doesn't -- the student's overall percentage -- so it no
+   longer duplicates that card the way the original mark-repeating pill
+   did before it was dropped. */
+.pill { display: inline-flex; align-items: center; padding: 6px 14px; border-radius: 9999px; font-size: 15px; font-weight: 700; background: #eff6ff; color: #1e40af; margin-bottom: 16px; }
+
+.panel { background: #fff; border: 1px solid var(--rule); border-radius: 12px; padding: 20px; margin-top: 16px; }
+.bar-row { display: flex; align-items: center; gap: 12px; padding: 7px 0; }
+.bar-label { min-width: 240px; font-size: 13px; color: #334155; text-align: right; }
+.bar-track { flex: 1; height: 10px; background: var(--rule-faint); border-radius: 9999px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 9999px; }
+.bar-count { min-width: 56px; font-size: 13px; font-weight: 700; color: var(--ink-body); }
+
+.grp { background: #fff; border: 1px solid var(--rule); border-radius: 12px; margin-top: 16px; overflow: hidden; }
+.grp-head { padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; background: var(--page-bg); gap: 12px; cursor: pointer; list-style: none; }
+.grp-head::-webkit-details-marker { display: none; }
+.grp-name { font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 9px; }
+.grp-name .fname { font-family: var(--font-mono); }
+.sev-bar { display: inline-block; width: 4px; height: 20px; border-radius: 2px; flex-shrink: 0; }
+.count { color: #fff; padding: 2px 10px; border-radius: 9999px; font-size: 12px; font-weight: 700; min-width: 28px; text-align: center; }
+.grp-meta { font-size: 11px; font-weight: 600; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; display: flex; align-items: center; gap: 10px; }
+
+/* Glue, not a Checker token: rotates the inline chevron via the native
+   disclosure element's [open] attribute -- no JavaScript, per Phase 7 spec §7. */
+.chevron { transition: transform .15s ease; flex-shrink: 0; }
+details[open] > .grp-head .chevron { transform: rotate(90deg); }
+
+.fb { padding: 14px 20px; background: #fffbeb; border-bottom: 1px solid #fef3c7; font-size: 13px; color: #92400e; line-height: 1.55; }
+.fb:last-child { border-bottom: none; }
+
+.loc { border-bottom: 1px solid var(--rule-faint); padding: 12px 20px; }
+.loc:last-child { border-bottom: none; }
+.loc-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 12px; flex-wrap: wrap; }
+.loc-id { font-family: var(--font-mono); color: var(--ink-body); background: var(--rule-faint); padding: 2px 8px; border-radius: 4px; }
+/* Glue: the outcome text label beside a check id -- colour set inline per
+   check via var(--pass|--fail|--ink-muted|--info), never a literal here. */
+.loc-status { font-weight: 700; }
+
+/* Glue: the "N of M checks were met" line a card closes with when it isn't
+   fully clean (Phase 7 spec §5) -- not itself one of the Checker's tokens. */
+.met-line { padding: 12px 20px; font-size: 13px; color: var(--ink-muted); }
+
+.note { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 14px 18px; font-size: 13px; color: #1e40af; line-height: 1.55; margin-top: 12px; }
+.note:first-child { margin-top: 0; }
+
+.clean { text-align: center; padding: 48px 32px; background: #fff; border-radius: 12px; border: 2px dashed #d1fae5; }
+/* Deliberately a plain paragraph, not a heading element: this sits inside
+   a .grp card whose own name is a plain span in its summary (a widget
+   label, not a document heading), so a level-3 heading here would be the
+   very first heading after the page's lone level-1 title, skipping a
+   level. Confirmed by a real vnu.jar run against the golden cohort's own
+   output, not assumed (CLAUDE.md's empirical-standard ground rule). */
+.clean .clean-heading { font-size: 20px; font-weight: 700; color: var(--pass); margin-bottom: 4px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule-faint); }
+th { color: var(--ink-muted); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+
+.foot { margin-top: 40px; }
+.foot hr { border: none; border-top: 1px solid var(--rule); margin-bottom: 16px; }
+.foot p { text-align: center; font-size: 11px; color: var(--ink-faint); margin-bottom: 2px; }
+
+@media print {
+  .hdr { background: none; color: var(--ink); padding: 24px 0; border-bottom: 2px solid var(--rule); }
+  .hdr .subtitle { opacity: 1; color: var(--ink-muted); }
+  .grp { break-inside: avoid; }
+  .grp > :not(summary) { display: block !important; }
+}
+</style><style>.lottie-animation-container{width:var(--lottie-animation-container-width);height:var(--lottie-animation-container-height);background-color:var(--lottie-animation-container-background-color);overflow:hidden;margin:var(--lottie-animation-margin)}.lottie-animation-container svg{transform:scale(var(--lottie-animation-scale))}</style><style>.lottie-animation-container{width:var(--lottie-animation-container-width);height:var(--lottie-animation-container-height);background-color:var(--lottie-animation-container-background-color);overflow:hidden;margin:var(--lottie-animation-margin)}.lottie-animation-container svg{transform:scale(var(--lottie-animation-scale))}</style></head><body><header class="hdr"><div class="hdr-inner"><h1>Module Exam 1 Marker Report — NN. Kgatla (2029139488)</h1><p class="subtitle">CSIS1664 (2026)</p></div></header><div class="content"><div class="pill">Final Percentage: 96%</div><div class="stats"><div class="stat mark"><div class="label">Total Marks</div><div class="value">76 / 79</div></div><div class="stat"><div class="label">Checks met</div><div class="value">76</div></div><div class="stat"><div class="label">Checks not met</div><div class="value">3</div></div><div class="stat"><div class="label">Files matched</div><div class="value">2 / 2</div></div></div><div class="panel"><div class="bar-row"><div class="bar-label">Directory and File Structure</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:var(--pass)"></div></div><div class="bar-count">1 / 1</div></div><div class="bar-row"><div class="bar-label">index.html</div><div class="bar-track"><div class="bar-fill" style="width:97.4%;background:var(--warn)"></div></div><div class="bar-count">38 / 39</div></div><div class="bar-row"><div class="bar-label">styles/sandstone.css</div><div class="bar-track"><div class="bar-fill" style="width:94.9%;background:var(--warn)"></div></div><div class="bar-count">37 / 39</div></div></div><details class="grp" open=""><summary class="grp-head"><span class="grp-name"><span class="sev-bar" style="background:var(--pass)"></span><svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>Directory and File Structure</span><span class="grp-meta">Mark: 1 / 1<span class="count" style="background:var(--pass)">0</span></span></summary><div class="clean"><p class="clean-heading">All checks met</p><p>Nothing to report for this section.</p></div></details><details class="grp" open=""><summary class="grp-head"><span class="grp-name"><span class="sev-bar" style="background:var(--warn)"></span><svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg><span class="fname">index.html</span></span><span class="grp-meta">Mark: 38 / 39<span class="count" style="background:var(--warn)">1</span></span></summary><div class="loc"><div class="loc-meta"><span class="loc-id">header-img-alt</span><span class="loc-status" style="color:var(--fail)">Not met</span></div><div class="fb"><p class="hint">Step 2.4: your logo &lt;img&gt; needs a non-empty alt attribute describing the image.</p></div></div><div class="met-line">38 of 39 checks were met.</div></details><details class="grp" open=""><summary class="grp-head"><span class="grp-name"><span class="sev-bar" style="background:var(--warn)"></span><svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg><span class="fname">styles/sandstone.css</span></span><span class="grp-meta">Mark: 37 / 39<span class="count" style="background:var(--warn)">2</span></span></summary><div class="loc"><div class="loc-meta"><span class="loc-id">body-font-family</span><span class="loc-status" style="color:var(--fail)">Not met</span></div><div class="fb"><p class="hint">Step 3.1: your body rule must set font-family to "Trebuchet MS", Tahoma, sans-serif (the quotes around Trebuchet MS are required, single or double is fine), ending the declaration with a semicolon (;).</p><ul class="evidence"><li>Line 26 — rule 'body' does not declare font-family: "Trebuchet MS", Tahoma, sans-serif or 'Trebuchet MS', Tahoma, sans-serif (directly or via the font shorthand)</li></ul></div></div><div class="loc"><div class="loc-meta"><span class="loc-id">body-background-image</span><span class="loc-status" style="color:var(--fail)">Not met</span></div><div class="fb"><p class="hint">Step 3.1: your body rule must set background-image to url("../images/sandstone-texture.png") -- note the ../ (the style sheet is inside the styles folder), ending the declaration with a semicolon (;).</p><ul class="evidence"><li>Line 26 — rule 'body' does not declare background-image: url("../images/sandstone-texture.png") or url('../images/sandstone-texture.png') or url(../images/sandstone-texture.png) (directly or via the background shorthand)</li></ul></div></div><div class="met-line">37 of 39 checks were met.</div></details><h2 class="section-title">HTML Validation</h2><div class="panel"><table><thead><tr><th>Page</th><th>Line</th><th>Message</th></tr></thead><tbody><tr><td>index.html</td><td>31</td><td>Quote “"” in attribute name. Probable cause: Matching quote missing somewhere earlier.</td></tr><tr><td>index.html</td><td>31</td><td>Quote “"” in attribute name. Probable cause: Matching quote missing somewhere earlier.</td></tr><tr><td>index.html</td><td>33</td><td>Attribute “alt"sandstone” not allowed on element “img” at this point.</td></tr><tr><td>index.html</td><td>33</td><td>Attribute “singers” not allowed on element “img” at this point.</td></tr><tr><td>index.html</td><td>33</td><td>Attribute “logo"” not allowed on element “img” at this point.</td></tr><tr><td>index.html</td><td>33</td><td>An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.</td></tr></tbody></table></div><h2 class="section-title">CSS Validation</h2><div class="clean"><p class="clean-heading">No CSS validation errors.</p></div><h2 class="section-title">Marker details</h2><div class="note"><p>Practical Marker 0.2.0 · Module Exam 1 · Run 2026-08-28T08:58:43.099378+00:00 · Spec: me1.checks.yaml (db26895f0962) · Memo hash: e6ee10bded44</p></div><div class="foot"><hr><p>CSIS1664 · Introduction to the Internet and Web Page Development</p><p>Department of Computer Science &amp; Informatics, UFS.</p><p id="createdOn">Generated on 28 August 2026</p></div></div></body></html>

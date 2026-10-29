@@ -1,0 +1,124 @@
+/*
+    NN. Kgatla (2029139488)
+    CSIS1664 (2026) - Module Exam 1
+    File name: sandstone.css
+*/
+
+/* **************************************************************
+   Add each rule below the comment that describes it, and keep
+   the rules in the order in which the comments appear.
+   Use only the colour values given in the question paper, in
+   exactly the notation given there.
+   End every declaration with a semicolon.
+   ************************************************************** */
+
+
+/* ************ General Rules ************ */
+
+
+/* Step 3.1 - The entire page:
+   - A text colour of #333333
+   - The Trebuchet MS typeface, with Tahoma as a fallback, and a suitable generic family
+   - A font size of 16px
+   - A line height of 1.6
+   - Display sandstone-texture.png as a background image
+   - The background image must stay in place when the page is scrolled */
+body {
+    color: #333333;
+    font-family: "The Trebuchet MS typeface", Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image: url("images/sandstone-texture.png");
+    background-attachment: fixed;
+}
+
+/* Step 3.2 - All level-1 headings and all level-2 headings:
+   - Remove all margins */
+h1, h2{
+    margin: 0;
+}
+
+/* Step 3.3 - All level-1 headings:
+   - A font size of 2rem
+   - 2px of space between the letters
+   - All letters displayed in uppercase */
+h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Step 3.4 - All hyperlinks in the normal and the visited states:
+   - Text colour of rgb(140, 62, 26)
+   - No underline */
+a:link, a:visited{
+    color: rgb(140, 62, 26);
+    text-decoration: none;
+}
+
+/* Step 3.5 - All hyperlinks when the mouse is over them:
+   - The text colour hsl(24, 75%, 35%)
+   - An underline */
+a:hover {
+    color: hsl(24, 75%, 35%);
+    text-decoration: underline;
+}
+
+/* ************ Style Classes ************ */
+
+
+/* Step 3.6 - Any paragraph that uses the tagline style class:
+   - Italicised text
+   - Text colour of maroon */
+p.tagline{
+    font-style: italic;
+    color: maroon;
+}
+
+/* ************ Sections and Divisions ************ */
+
+
+/* Step 3.7 - The division with the ID container:
+   - A width of 960px
+   - Centred horizontally with 20px of space above and below
+   - The background colour #fffaf0 */
+div#container {
+    width: 960px;
+    margin: 20px auto;
+    background-color: #fffaf0;
+}
+
+/* Step 3.8 - The header section:
+   - Padding of 25px to the left and right, and 20px above and below
+   - A solid bottom border of 3px in the colour #a63 */
+header {
+    padding: 20px 25px;
+    border-bottom: 3px solid #a63;
+}
+
+/* Step 3.9 - All section elements inside the main content area:
+   - Padding of 20px at the top and 25px on all the other sides
+   - A bottom margin of 15px */
+main section{
+    padding: 20px 25px 25px;
+    margin-bottom: 15px;
+}
+
+/* Step 3.10 - All level-2 headings inside the main content area:
+   - Text should not be displayed as boldfaced
+   - A top margin of 0.8em */
+main h2{
+    font-weight: normal;
+    margin-top: 0.8em;
+}
+
+/* Step 3.11 - The footer section:
+   - A dashed top border of 1px in the colour #a63
+   - 15px of padding on all sides
+   - Centred text */
+footer {
+    border-top: 1px dashed #a63;
+    padding: 15px;
+    text-align: center;
+}
+

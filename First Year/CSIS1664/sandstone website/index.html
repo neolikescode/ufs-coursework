@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- NN. Kgatla (2029139488) -->
+<!-- CSIS1664 (2026) - Module Exam 1 -->
+<!-- File name: index.html -->
+<html lang="en">
+    <head>
+
+        <!-- Step 2.2 - Specify the character encoding, give the page a title,
+             and add a description for search engines. The text for the title
+             and for the description is in text_me1.txt -->
+        <meta charset="utf-8" >
+        <title>
+            Sandstone Singers
+        </title>
+        <meta name="description" content="The Sandstone Singers are a community choir in the eastern Free State. Rehearsals are held every Tuesday evening and no audition is required.">
+
+        <!-- Step 2.3 - Link the two style sheets -->
+        <link rel="stylesheet" href="styles/modern-normalize.css">
+        <link rel="stylesheet" href="styles/sandstone.css">
+    </head>
+    <body>
+
+        <!-- Step 2.4 - Place everything inside the body element in a division
+             with the ID container -->
+        <div id="container">
+            <!-- ****** header Start ****** -->
+            <header>
+                <!-- Step 2.5.1 - Image: logo.png -->
+                <p>
+                    <img src="images/logo.png"
+                         alt"Sandstone singers logo"
+                         width="240"
+                         height="64">
+                </p>
+                <!-- Step 2.5.2 - Level-1 heading -->
+                <h1>Sandstone Singers</h1>
+
+                <!-- Step 2.5.3 - Paragraph that uses the tagline style class -->
+                <p class="tagline">
+                    Four-part harmony in the eastern Free State
+                </p>
+
+                <!-- ****** header End ****** -->
+            </header>
+            <!-- ****** main Start ****** -->
+            <main>
+                <!-- ****** First section START ****** -->
+                <section>
+                    <!-- Step 2.6.2 - Level-2 heading -->
+                    <h2>About the choir</h2>
+
+                    <p>
+                        The Sandstone Singers meet every Tuesday evening in the old town
+                        hall on Market Street, where the thick sandstone walls give the room
+                        a warmth that singers notice from the very first note. Anyone who
+                        enjoys singing is welcome and there is no audition. Dates for the
+                        coming season are published by the
+                        <!-- Step 2.6.3 - Hyperlink to the web address given in text_me1.txt -->
+                        <!-- Note: The "." at the end of the sentence is not part of the hyperlink -->
+                        <a href="https://www.freestatechoralfestival.co.za">Free State Choral Festival</a>.
+                    </p>
+
+                    <p>
+                        A reviewer who heard us last winter called the choir
+                        <!-- Step 2.6.4 - Quotation (excluding the ,) -->
+                        <q>the finest small choir in the province</q>,
+                        and the members have not
+                        stopped repeating the phrase since. The review appeared in
+                        <!-- Step 2.6.5 - Italics (excluding the .) -->
+                        <em>The Eastern Free State Courier</em>.
+                    </p>
+
+                    <!-- ****** First section END ****** -->
+                </section>
+                <!-- ****** Second section START ****** -->
+                <section>
+                    <!-- Step 2.6.2 - Level-2 heading -->
+                    <h2>Voice parts</h2>
+
+                    <p>
+                        We sing in four parts. New members are placed after one rehearsal,
+                        and nobody is asked to sing alone.
+                    </p>
+
+                    <!-- Step 2.6.6 - Nested list -->
+                    <ul>
+                        <li>
+                            Upper voices
+                            <ol>
+                                <li>Soprano</li>
+                                <li>Alto</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Lower voices
+                            <ol>
+                                <li>Tenor</li>
+                                <li>Bass</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <!-- ****** Second section END ****** -->
+                </section>
+                <!-- ****** main END ****** -->
+            </main>
+            <!-- ****** footer START ****** -->
+            <footer>
+                <p>
+                    <!-- Step 2.7.1 - Copyright symbol -->
+                    &copy; 2026 Sandstone Singers. Write to us at
+                    <!-- Step 2.7.2 - Hyperlink to the e-mail address given in text_me1.txt -->
+                    <a href="mailto:info@sandstonesingers.co.za">info@sandstonesingers.co.za</a>
+                </p>
+                <!-- ****** footer END ****** -->
+            </footer>
+        </div>
+    </body>
+</html>
