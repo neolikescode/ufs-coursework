@@ -1,0 +1,98 @@
+/*
+    NN. Kgatla (2029139488)
+    CSIS1664 (2026) - Module Exam 2
+    File name: rooigras.css
+*/
+
+/* **************************************************************
+   Add each rule below the comment that describes the selector, and keep
+   the rules in the order in which they appear here.
+   Use only the colour values given in the question paper, in
+   exactly the notation given there.
+   ************************************************************** */
+
+/* ************ General Rules ************ */
+
+/* Step 3.1 - The entire page */
+body {
+    padding-top: 5rem;
+}
+
+/* Step 3.2 - All level-2 headings in the main section */
+main h2 {
+    color: olive;
+    font-variant: small-caps;
+    border-bottom: 2px dotted olive;
+}
+
+
+/* ************ Style classes ************ */
+
+/* Step 3.3 - All elements that use the ribbon style class */
+.ribbon {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background-color: hsl(18, 55%, 42%);
+    padding: 0.25rem 0.75rem;
+}
+
+/* ************ Sections ************ */
+
+/* Step 3.4 - The section with the ID hero */
+#hero {
+    background-image: linear-gradient(135deg, #eef5e9, #fdf3e1);
+}
+
+/* Step 3.5 - The sections with the IDs plants, calendar and visit */
+#plants, #calendar, #visit {
+    padding-top: 4.5rem;
+}
+
+    /* Step 3.6 - All unordered lists in the section with the ID visit */
+    #visit ul {
+        list-style-type: square;
+        list-style-position: inside;
+    }
+
+/* Step 3.7 - The figure element that uses the greenhouse style class */
+.greenhouse {
+    float: right;
+    width: 40%;
+    margin-left: 1.5rem;
+}
+
+/* Step 3.8 - Unvisited and visited hyperlinks in the footer */
+footer a:link, footer a:visited {
+    color: rgb(230, 244, 234);
+    text-decoration: none;
+    text-transform: none;
+}
+
+/* Step 3.9 - A hyperlink in the footer when the mouse pointer moves over it */
+footer a:hover {
+    color: #fff3b0;
+}
+
+/* Step 3.10 - The footer */
+footer {
+    clear: both;
+}
+
+/* ************ Print ************ */
+
+/* Step 3.11 - Add the following rules for printing: */
+@media print {
+
+    /* Step 3.11.1 - The entire page */
+    body {
+        padding-top: 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    /* Step 3.11.2 - All level-2 headings in the main section */
+    main h2 {
+        break-after: avoid;
+    }
+}

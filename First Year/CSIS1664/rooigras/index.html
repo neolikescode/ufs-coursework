@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<!-- NN. Kgatla (2029139488) -->
+<!-- CSIS1664 (2026) - Module Exam 2 -->
+<!-- File name: index.html -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rooigras Indigenous Nursery</title>
+    <meta name="description" content="Rooigras is a nursery outside Bloemfontein that grows South African grasses, aloes and bulbs that are suited to the Free State.">
+
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <!-- Step 2.1 - Link the FontAwesome style sheet and the rooigras.css style sheet -->
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="styles/rooigras.css">
+
+</head>
+<body>
+
+    <!-- ****** nav Start ****** -->
+    <!-- Step 2.2.1 - Navigation bar -->
+    <nav class="navbar navbar-expand-md fixed-top bg-light border-bottom">
+        <div class="container">
+
+            <!-- Step 2.2.2 - Brand -->
+            <a class="navbar-brand" href="index.html">
+                <!-- Step 2.2.3 - Icon: seedling -->
+                <i class="fa-solid fa-seedling text-success"></i>
+                Rooigras
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <!-- Step 2.2.4 - Navigation bar links -->
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="#plants">Plants</a>
+                    <a class="nav-link" href="#calendar">Planting calendar</a>
+                    <a class="nav-link" href="#visit">Visit us</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ****** nav End ****** -->
+    <!-- ****** main Start ****** -->
+    <!-- Step 2.3.1 - Responsive fixed-width container -->
+    <main class="container">
+
+        <!-- ****** hero section Start ****** -->
+        <!-- Step 2.3.2 - Section with the ID hero -->
+        <section id="hero" class="p-4 rounded-4">
+            <!-- Step 2.3.3 - Level-1 heading -->
+            <h1 class="display-5">Grow the Free State's own plants</h1>
+            <!-- Step 2.3.4 - Paragraph that stands out -->
+            <p class="lead">Indigenous grasses, aloes and bulbs, raised from seed on the outskirts of Bloemfontein.</p>
+            <p>
+                Every plant we sell has grown through at least one Highveld winter in our
+                open beds, so it is ready for frost, wind and dry months before it reaches
+                your garden.
+            </p>
+            <!-- Step 2.3.5 - Button link to the section with the ID plants -->
+            <a class="btn btn-success" href="#plants">See this season's plants</a>
+        </section>
+        <!-- ****** hero section End ****** -->
+        <!-- ****** plants section Start ****** -->
+        <section id="plants">
+            <h2>Plants of the season</h2>
+            <p>Three plants that our visitors ask about most often this time of the year.</p>
+
+            <!-- Step 2.4.1 - Grid row for the cards -->
+            <div class="row row-cols-sm-1 row-cols-md-3 g-4">
+
+                <!-- ****** First card Start ****** -->
+                <!-- Step 2.4.2 - Column -->
+                <div class="col">
+                    <!-- Step 2.4.3 - Card -->
+                    <article class="card h-100">
+                        <!-- Step 2.4.4 - Image at the top of the card -->
+                        <img class="card-img-top" src="images/aloe.png" alt="An aloe with three orange flower spikes">
+                        <!-- Step 2.4.5 - Card body -->
+                        <div class="card-body">
+                            <!-- Step 2.4.6 - Card title and card text -->
+                            <h3 class="card-title">Aloe</h3>
+                            <p class="card-text">
+                                Thick grey-green leaves and bright orange flower spikes in winter.
+                                Needs full sun and very little water.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- ****** First card End ****** -->
+                <!-- ****** Second card Start ****** -->
+                <!-- Step 2.4.2 - Column -->
+                <div class="col">
+                    <!-- Step 2.4.3 - Card -->
+                    <article class="card h-100">
+                        <!-- Step 2.4.4 - Image at the top of the card -->
+                        <img class="card-img-top" src="images/red-grass.png" alt="A clump of red grass with rust-coloured seed heads">
+
+                        <!-- Step 2.4.5 - Card body -->
+                        <div class="card-body">
+                            <!-- Step 2.4.6 - Card title and card text -->
+                            <h3 class="card-title">Red grass</h3>
+                            <p class="card-text">
+                                The grass that gives the nursery its name. Its seed heads turn rusty red
+                                in late summer. Needs full sun.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- ****** Second card End ****** -->
+                <!-- ****** Third card Start ****** -->
+                <!-- Step 2.4.2 - Column -->
+                <div class="col">
+                    <!-- Step 2.4.3 - Card -->
+                    <article class="card h-100">
+                        <!-- Step 2.4.4 - Image at the top of the card -->
+                        <img class="card-img-top" src="images/wild-garlic.png" alt="Wild garlic with round clusters of mauve flowers">
+                        <!-- Step 2.4.7 - The word New, in white, with fully rounded ends -->
+                        <span class="ribbon text-white rounded-pill">New</span>
+                        <!-- Step 2.4.5 - Card body -->
+                        <div class="card-body">
+                            <!-- Step 2.4.6 - Card title and card text -->
+                            <h3 class="card-title">Wild garlic</h3>
+                            <p class="card-text">
+                                Round clusters of small mauve flowers from spring to autumn.
+                                Needs sun or light shade and regular water.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- ****** Third card End ****** -->
+
+            </div>
+        </section>
+        <!-- ****** plants section End ****** -->
+        <!-- ****** calendar section Start ****** -->
+        <section id="calendar">
+            <h2>Planting calendar</h2>
+            <p>Plants settle in best when they go into the ground at the right time of the year.</p>
+
+            <!-- Step 2.5.1 - Table -->
+            <table class="table table-bordered table-hover caption-top">
+                <!-- Step 2.5.2 - Caption -->
+                <caption>Best time to plant</caption>
+                <!-- Step 2.5.3 - Table head -->
+                <thead class="table-success">
+                    <tr>
+                        <th>Plant</th>
+                        <th>Type</th>
+                        <th>Best time to plant</th>
+                        <th>Water</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aloe</td>
+                        <td>Succulent</td>
+                        <!-- Step 2.5.4 - This cell spans two rows -->
+                        <td rowspan="2">Spring</td>
+                        <td>Very little</td>
+                    </tr>
+                    <tr>
+                        <td>Red grass</td>
+                        <td>Grass</td>
+                        <td>Little</td>
+                    </tr>
+                    <tr>
+                        <td>Wild garlic</td>
+                        <td>Bulb</td>
+                        <td>Autumn</td>
+                        <td>Regular</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple lily</td>
+                        <td>Bulb</td>
+                        <td>Late winter</td>
+                        <td>Regular</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- ****** calendar section End ****** -->
+        <!-- ****** visit section Start ****** -->
+        <section id="visit">
+            <h2>Visit the nursery</h2>
+
+            <!-- Step 2.6.1 - Figure around the image, the image made responsive, and a caption -->
+            <figure class="greenhouse">
+                <img class="img-fluid" src="images/nursery.png" alt="The Rooigras greenhouse with rows of potted plants">
+                <figcaption>
+                    Our greenhouse in early spring
+                </figcaption>
+            </figure>
+            <p>
+                The nursery lies on a gravel road ten minutes outside Bloemfontein. Our open
+                beds are laid out by plant type, so you can see how each plant looks after
+                a full year in the ground before you choose one for your own garden.
+            </p>
+            <p>We grow:</p>
+            <!-- Step 2.6.2 - Nested list below Grasses -->
+            <ul>
+                <li>
+                    Grasses
+                    <ul>
+                        <li>Red grass</li>
+                        <li>Weeping love grass</li>
+                    </ul>
+                </li>
+                <li>Aloes and other succulents</li>
+                <li>Bulbs</li>
+                <li>Groundcovers</li>
+            </ul>
+            <p>
+                Send your questions to
+                <!-- Step 2.6.3 - Hyperlink to plants@rooigras.co.za -->
+                <a href="mailto:plants@rooigras.co.za">plants@rooigras.co.za</a>.
+                Read more about red grass on
+                <!-- Step 2.6.4 - Hyperlink to https://pza.sanbi.org/themeda-triandra, which opens in a new tab -->
+                <a target="_blank" href="https://pza.sanbi.org/themeda-triandra"> PlantZAfrica</a> (opens in a new tab).
+            </p>
+        </section>
+        <!-- ****** visit section End ****** -->
+
+    </main>
+    <!-- ****** main End ****** -->
+    <!-- ****** footer Start ****** -->
+    <!-- Step 2.7.1 - Footer -->
+    <footer class="bg-success text-white py-4 text-center">
+        <p>
+            <a href="https://www.facebook.com">
+                <!-- Step 2.7.2 - Icon: facebook -->
+                <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            <a href="https://www.instagram.com"><!-- Step 2.7.3 - Icon: instagram --><i class="fa-brands fa-instagram fa-xl"></i></a>
+        </p>
+        <p>
+            <!-- Step 2.7.4 - Copyright symbol -->
+            &copy; 2026 Rooigras Indigenous Nursery
+        </p>
+    </footer>
+    <!-- ****** footer End ****** -->
+
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
